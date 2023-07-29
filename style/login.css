@@ -1,0 +1,90 @@
+@font-face {
+    font-family: sahel;
+    src: url(../assets/fonts/Sahel.eot);
+    src: url(../assets/fonts/Sahel.ttf) format("ttf");
+    src: url(../assets/fonts/Sahel.woff) format("woff");
+    font-weight: normal;
+}
+
+@font-face {
+    font-family: sahelBlack;
+    src: url(../assets/fonts/Sahel-Black.eot);
+    src: url(../assets/fonts/Sahel-Black.ttf) format("ttf");
+    src: url(../assets/fonts/Sahel-Bold.woff) format("woff");
+    font-weight: normal;
+}
+
+hr {
+    width: 100%;
+    margin: 25px 0 30px;
+    border: none;
+    border-top: 0.5px solid #585858;
+}
+
+body {
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #18181e;
+    height: 100vh;
+    font-family: sahel;
+}
+
+.loginContainer {
+    width: 350px;
+    background-color: #32323e;
+    border-radius: 7px;
+    direction: rtl;
+    padding: 20px;
+}
+
+.loginContainer h3 {
+    margin: 0;
+    font-weight: bold;
+    color: #c1c1c1;
+    font-family: sahelBlack;
+    font-size: 1.7rem;
+    text-align: center;
+}
+
+.loginContainer .form {
+    display: flex;
+    flex-direction: column;
+}
+
+.loginContainer .form label {
+    margin-top: 35px;
+    margin-bottom: 10px;
+    color: #c1c1c1;
+    font-weight: bold;
+}
+
+.loginContainer .form input {
+    height: 45px;
+    border: none;
+    padding: 0 12px;
+    border-radius: 4px;
+    font-family: sahel;
+}
+
+.loginContainer .form input:focus {
+    outline: 0;
+    background-color: #d6d6d6;
+}
+
+.loginContainer .form input::placeholder {
+    color: #18181e;
+    font-family: sahel;
+}
+
+.loginContainer .form .submit {
+    margin-top: 50px;
+    width: 100%;
+    text-align: center;
+    text-decoration: none;
+    color: aliceblue;
+    background-color: #5ece1d;
+    height: 45px;
+    border-radius: 4px;
+}

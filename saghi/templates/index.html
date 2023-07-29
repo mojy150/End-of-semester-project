@@ -1,0 +1,1492 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style/main.css" />
+    <link rel="stylesheet" href="style/slide.css" />
+    <title>ساقی فیلم</title>
+  </head>
+  <body>
+    <div class="header">
+      <div class="navbar">
+        <div class="leftNav">
+          <div class="logo">
+            <img src="assets/img/logo.jpg" alt="logo" />
+            <span>ساقی فیلم</span>
+          </div>
+          <div class="menu">
+            <ul class="mainMenu">
+              <li class="menuItems">
+                <div class="menuTitle">
+                  <span>فیلم دوبله</span>
+                  <img src="assets/openMenu.png" alt="openMenu" />
+                </div>
+                <ul>
+                  <li>اکشن</li>
+                  <li>بیوگرافی</li>
+                  <li>تاریخی</li>
+                  <li>ترسناک</li>
+                  <li>جنایی</li>
+                  <li>جنگی</li>
+                  <li>خانوداگی</li>
+                  <li>درام</li>
+                  <li>رازآلود</li>
+                  <li>رزمی</li>
+                  <li>فانتزی</li>
+                  <li>فانتزی</li>
+                  <li>کلاسیک</li>
+                  <li>کمدی</li>
+                  <li>ماجرایی</li>
+                  <li>موزیکال</li>
+                  <li>هندی</li>
+                </ul>
+              </li>
+              <li class="menuItems">
+                <div class="menuTitle">فیلم خارجی</div>
+              </li>
+              <li class="menuItems">
+                <div class="menuTitle">فیلم ایرانی</div>
+              </li>
+              <li class="menuItems">
+                <div class="menuTitle">
+                  <span>انیمیشن</span>
+                  <img src="assets/openMenu.png" alt="openMenu" />
+                </div>
+                <ul>
+                  <li>انیمیشن دوبله فارسی</li>
+                  <li>زبان اصلی</li>
+                  <li>انیمیشن سریالی</li>
+                  <li>قدیمی دوبله</li>
+                </ul>
+              </li>
+              <li class="menuItems">
+                <div class="menuTitle">
+                  <span>سریال</span>
+                  <img src="assets/openMenu.png" alt="openMenu" />
+                </div>
+                <ul>
+                  <li>سریال ایرانی</li>
+                  <li>سریال ترکی</li>
+                  <li>سریال خارجی</li>
+                  <li>سریال دوبله</li>
+                </ul>
+              </li>
+              <li class="menuItems">
+                <div class="menuTitle">
+                  <span>مستند</span>
+                  <img src="assets/openMenu.png" alt="openMenu" />
+                </div>
+                <ul>
+                  <li>مستند دوبله فارسی</li>
+                  <li>زبان اصلی</li>
+                  <li>ورزشی</li>
+                </ul>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="rightNav">
+          <div class="search">
+            <input type="text" placeholder="جست و جو..." />
+            <button>
+              <img src="assets/search.png" alt="" />
+            </button>
+          </div>
+          <div class="user">
+            <a href="login.html">ورود</a>
+            /
+            <a href="signup.html">ثبت نام</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="container">
+      <div class="SlideContainer">
+        <div class="item">
+          <div class="quote">
+            <p>I am Groot.<span>Groot</span></p>
+          </div>
+        </div>
+        <div class="item">
+          <div class="quote">
+            <p>
+              You'r the head of security and your password is
+              'password'&nbsp;?<span>Peter Parker</span>
+            </p>
+          </div>
+        </div>
+        <div class="item">
+          <div class="quote">
+            <p>That really is America's ass.<span>Captain America</span></p>
+          </div>
+        </div>
+        <div class="item">
+          <div class="quote">
+            <p>
+              The hardest choices require the strongest wills.<span
+                >Thanos</span
+              >
+            </p>
+          </div>
+        </div>
+        <div class="item">
+          <div class="quote">
+            <p>
+              Genius, billionaire, playboy, philanthropist.<span
+                >Tony Stark</span
+              >
+            </p>
+          </div>
+        </div>
+        <div class="item">
+          <div class="quote">
+            <p>
+              We never lose our demons. We only learn to live above them.<span
+                >Ancient One</span
+              >
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="filter">
+        <div class="filterItems">
+          <div class="fltItmTitle">
+            <span>فیلم یا سریال</span>
+            <img src="assets/openMenu.png" alt="" />
+          </div>
+          <ul id="filmAndSerialList">
+            <li>
+              <input name="filmAndSerial" id="all" type="radio" />
+              <label for="all">همه</label>
+            </li>
+            <li>
+              <input name="filmAndSerial" id="film" type="radio" />
+              <label for="film">فیلم</label>
+            </li>
+            <li>
+              <input name="filmAndSerial" id="serial" type="radio" />
+              <label for="serial">سریال</label>
+            </li>
+          </ul>
+        </div>
+        <div class="filterItems">
+          <div class="fltItmTitle">
+            <span>ژانر</span>
+            <img src="assets/openMenu.png" alt="" />
+          </div>
+          <ul id="genreList">
+            <li>
+              <input name="genre" id="action" type="radio" />
+              <label for="action">اکشن</label>
+            </li>
+            <li>
+              <input name="genre" id="horror" type="radio" />
+              <label for="horror">ترسناک</label>
+            </li>
+            <li>
+              <input name="genre" id="advanture" type="radio" />
+              <label for="advanture">ماجراجویی</label>
+            </li>
+            <li>
+              <input name="genre" id="comedy" type="radio" />
+              <label for="comedy">کمدی</label>
+            </li>
+            <li>
+              <input name="genre" id="drama" type="radio" />
+              <label for="drama">درام</label>
+            </li>
+            <li>
+              <input name="genre" id="animation" type="radio" />
+              <label for="animation">انیمیشن</label>
+            </li>
+          </ul>
+        </div>
+        <div class="filterItems">
+          <div class="fltItmTitle">
+            <span>از سال</span>
+            <img src="assets/openMenu.png" alt="" />
+          </div>
+          <ul id="fromYearList">
+            <li>
+              <input type="radio" name="fromYear" id="from131" />
+              <label for="from131">1310</label>
+            </li>
+            <li>
+              <input type="radio" name="fromYear" id="from132" />
+              <label for="from132">1320</label>
+            </li>
+            <li>
+              <input type="radio" name="fromYear" id="from133" />
+              <label for="from133">1330</label>
+            </li>
+            <li>
+              <input type="radio" name="fromYear" id="from134" />
+              <label for="from134">1340</label>
+            </li>
+            <li>
+              <input type="radio" name="fromYear" id="from135" />
+              <label for="from135">1350</label>
+            </li>
+            <li>
+              <input type="radio" name="fromYear" id="from136" />
+              <label for="from136">1360</label>
+            </li>
+            <li>
+              <input type="radio" name="fromYear" id="from137" />
+              <label for="from137">1370</label>
+            </li>
+            <li>
+              <input type="radio" name="fromYear" id="from138" />
+              <label for="from138">1380</label>
+            </li>
+            <li>
+              <input type="radio" name="fromYear" id="from139" />
+              <label for="from139">1390</label>
+            </li>
+            <li>
+              <input type="radio" name="fromYear" id="from140" />
+              <label for="from140">1400</label>
+            </li>
+          </ul>
+        </div>
+        <div class="filterItems">
+          <div class="fltItmTitle">
+            <span>تا سال</span>
+            <img src="assets/openMenu.png" alt="" />
+          </div>
+          <ul id="toYearList">
+            <li>
+              <input type="radio" name="toYear" id="to131" />
+              <label for="to131">1310</label>
+            </li>
+            <li>
+              <input type="radio" name="toYear" id="to132" />
+              <label for="to132">1320</label>
+            </li>
+            <li>
+              <input type="radio" name="toYear" id="to133" />
+              <label for="to133">1330</label>
+            </li>
+            <li>
+              <input type="radio" name="toYear" id="to134" />
+              <label for="to134">1340</label>
+            </li>
+            <li>
+              <input type="radio" name="toYear" id="to135" />
+              <label for="to135">1350</label>
+            </li>
+            <li>
+              <input type="radio" name="toYear" id="to136" />
+              <label for="to136">1360</label>
+            </li>
+            <li>
+              <input type="radio" name="toYear" id="to137" />
+              <label for="to137">1370</label>
+            </li>
+            <li>
+              <input type="radio" name="toYear" id="to138" />
+              <label for="to138">1380</label>
+            </li>
+            <li>
+              <input type="radio" name="toYear" id="to139" />
+              <label for="to139">1390</label>
+            </li>
+            <li>
+              <input type="radio" name="toYear" id="to140" />
+              <label for="to140">1400</label>
+            </li>
+          </ul>
+        </div>
+        <div class="filterItems">
+          <div class="fltItmTitle">
+            <span>امتیاز</span>
+            <img src="assets/openMenu.png" alt="" />
+          </div>
+          <ul id="scoreList">
+            <li>
+              <input type="radio" name="score" id="two" />
+              <label for="two">0-2</label>
+            </li>
+            <li>
+              <input type="radio" name="score" id="five" />
+              <label for="five">2-5</label>
+            </li>
+            <li>
+              <input type="radio" name="score" id="eight" />
+              <label for="eight">5-8</label>
+            </li>
+            <li>
+              <input type="radio" name="score" id="ten" />
+              <label for="ten">8-10</label>
+            </li>
+          </ul>
+        </div>
+        <div class="filterItems">
+          <div class="fltItmTitle">
+            <span>به ترتیب</span>
+            <img src="assets/openMenu.png" alt="" />
+          </div>
+          <ul id="sortList">
+            <li>
+              <input type="radio" name="sort" id="new" />
+              <label for="new">جدیدترین</label>
+            </li>
+            <li>
+              <input type="radio" name="sort" id="old" />
+              <label for="old">قدیمی ترین </label>
+            </li>
+            <li>
+              <input type="radio" name="sort" id="fave" />
+              <label for="fave">محبوب ترین</label>
+            </li>
+            <li>
+              <input type="radio" name="sort" id="score" />
+              <label for="score">امتیاز</label>
+            </li>
+          </ul>
+        </div>
+        <div class="filterSearch">
+          <button>جستجو</button>
+        </div>
+      </div>
+      <hr />
+      <div class="trendContainer">
+        <div class="trendTitle">
+          <h3>فیلم های ترند</h3>
+        </div>
+        <div class="trendItems">
+          <div class="trendItem">
+            <div class="trendImg">
+              <img src="assets/img/1.webp" alt="1" />
+            </div>
+            <div class="trendItemTitle">
+              <span>کیسی کا بای کیسی کی جان</span>
+            </div>
+          </div>
+          <div class="trendItem">
+            <div class="trendImg">
+              <img src="assets/img/2.webp" alt="1" />
+            </div>
+            <div class="trendItemTitle">
+              <span>پیمان</span>
+            </div>
+          </div>
+          <div class="trendItem">
+            <div class="trendImg">
+              <img src="assets/img/3.webp" alt="1" />
+            </div>
+            <div class="trendItemTitle">
+              <span>قندهار</span>
+            </div>
+          </div>
+          <div class="trendItem">
+            <div class="trendImg">
+              <img src="assets/img/4.webp" alt="1" />
+            </div>
+            <div class="trendItemTitle">
+              <span>مادر مافیا</span>
+            </div>
+          </div>
+          <div class="trendItem">
+            <div class="trendImg">
+              <img src="assets/img/5.webp" alt="1" />
+            </div>
+            <div class="trendItemTitle">
+              <span>سوار شو</span>
+            </div>
+          </div>
+          <div class="trendItem">
+            <div class="trendImg">
+              <img src="assets/img/6.webp" alt="1" />
+            </div>
+            <div class="trendItemTitle">
+              <span>مرد عنگبوتی - آنسوی دنیای عنکبوتی</span>
+            </div>
+          </div>
+        </div>
+      </div>
+      <hr />
+      <div class="main">
+        <div class="content">
+          <div class="cardContainer">
+            <div class="cardImage">
+              <img src="assets/img/c1.webp" alt="" />
+            </div>
+            <div class="cardDetails">
+              <div class="cardHeader">
+                <div class="cardTitle">
+                  <span>دانلود سریال ویچر فصل سوم</span>
+                </div>
+                <div class="cardScore">
+                  <img src="assets/icons8-imdb-48.png" alt="" />
+                  <div class="scoreNumb">
+                    <span>10/</span>
+                    <span class="score">8.2</span>
+                  </div>
+                </div>
+              </div>
+              <div class="mainCard">
+                <div class="cardSection">
+                  <span class="cardIcon">
+                    <img src="assets/icons8-sheets-24.png" alt="" />
+                  </span>
+                  <span class="cardDetailTitle">ژانر:</span>
+                  <span class="cardDetailName">اکشن,فانتزی</span>
+                </div>
+                <div class="cardSection">
+                  <span class="cardIcon">
+                    <img src="assets/icons8-europe-50.png" alt="" />
+                  </span>
+                  <span class="cardDetailTitle">کشور:</span>
+                  <span class="cardDetailName">
+                    لهستان، unitedstate، مجارستان
+                  </span>
+                </div>
+                <div class="cardSection">
+                  <span class="cardIcon">
+                    <img src="assets/icons8-advertisement-page-50.png" alt="" />
+                  </span>
+                  <span class="cardDetailTitle">کیفیت:</span>
+                  <span class="cardDetailName">HD</span>
+                </div>
+                <div class="cardSection">
+                  <span class="cardIcon">
+                    <img src="assets/icons8-user-50.png" alt="" />
+                  </span>
+                  <span class="cardDetailTitle">بازیگران:</span>
+                  <span class="cardDetailName"
+                    >Anna Shaffer، Freya Allan، Henry Cavill</span
+                  >
+                </div>
+                <div class="cardSection">
+                  <span class="cardIcon">
+                    <img src="assets/icons8-documentary-50.png" alt="" />
+                  </span>
+                  <span class="cardDetailTitle">کارگردان:</span>
+                  <span class="cardDetailName"></span>
+                </div>
+              </div>
+              <div class="cardDescrib">
+                <span>
+                  در دنیایی که انسان‌ها از نظر شرارت و بی‌رحمی تفاوت چندانی با
+                  جانوران وحشی ندارند، یک شکارچی هیولا تلاش می‌کند که ج...
+                </span>
+              </div>
+              <div class="cardFooter">
+                <div class="cardTagContainer">
+                  <span class="cardTag">زیرنویس چسبیده</span>
+                  <span class="cardTag">پخش آنلاین</span>
+                  <span class="cardTag">زبان اصلی</span>
+                </div>
+                <div class="cardDownload">
+                  <span>دانلود سریال</span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="cardContainer">
+            <div class="cardImage">
+              <img src="assets/img/c2.webp" alt="" />
+            </div>
+            <div class="cardDetails">
+              <div class="cardHeader">
+                <div class="cardTitle">
+                  <span>دانلود فیلم یک کیارا</span>
+                </div>
+                <div class="cardScore">
+                  <img src="assets/icons8-imdb-48.png" alt="" />
+                  <div class="scoreNumb">
+                    <span>10/</span>
+                    <span class="score">6.8</span>
+                  </div>
+                </div>
+              </div>
+              <div class="mainCard">
+                <div class="cardSection">
+                  <span class="cardIcon">
+                    <img src="assets/icons8-sheets-24.png" alt="" />
+                  </span>
+                  <span class="cardDetailTitle">ژانر:</span>
+                  <span class="cardDetailName">درام</span>
+                </div>
+                <div class="cardSection">
+                  <span class="cardIcon">
+                    <img src="assets/icons8-europe-50.png" alt="" />
+                  </span>
+                  <span class="cardDetailTitle">کشور:</span>
+                  <span class="cardDetailName"> ایتالیا </span>
+                </div>
+                <div class="cardSection">
+                  <span class="cardIcon">
+                    <img src="assets/icons8-advertisement-page-50.png" alt="" />
+                  </span>
+                  <span class="cardDetailTitle">کیفیت:</span>
+                  <span class="cardDetailName">HD</span>
+                </div>
+                <div class="cardSection">
+                  <span class="cardIcon">
+                    <img src="assets/icons8-user-50.png" alt="" />
+                  </span>
+                  <span class="cardDetailTitle">بازیگران:</span>
+                  <span class="cardDetailName">
+                    Leonardo Bevilacqua، Pio Amato، Swamy Rotolo
+                  </span>
+                </div>
+                <div class="cardSection">
+                  <span class="cardIcon">
+                    <img src="assets/icons8-documentary-50.png" alt="" />
+                  </span>
+                  <span class="cardDetailTitle">کارگردان:</span>
+                  <span class="cardDetailName">Jonas Carpignano</span>
+                </div>
+              </div>
+              <div class="cardDescrib">
+                <span> - </span>
+              </div>
+              <div class="cardFooter">
+                <div class="cardTagContainer">
+                  <span class="cardTag">زیرنویس چسبیده</span>
+                  <span class="cardTag">پخش آنلاین</span>
+                  <span class="cardTag">زبان اصلی</span>
+                </div>
+                <div class="cardDownload">
+                  <span>دانلود سریال</span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="cardContainer">
+            <div class="cardImage">
+              <img src="assets/img/c3.webp" alt="" />
+            </div>
+            <div class="cardDetails">
+              <div class="cardHeader">
+                <div class="cardTitle">
+                  <span>دانلود فیلم غملیات یاقوت</span>
+                </div>
+                <div class="cardScore">
+                  <img src="assets/icons8-imdb-48.png" alt="" />
+                  <div class="scoreNumb">
+                    <span>10/</span>
+                    <span class="score">6.8</span>
+                  </div>
+                </div>
+              </div>
+              <div class="mainCard">
+                <div class="cardSection">
+                  <span class="cardIcon">
+                    <img src="assets/icons8-sheets-24.png" alt="" />
+                  </span>
+                  <span class="cardDetailTitle">ژانر:</span>
+                  <span class="cardDetailName">درام,جنایی</span>
+                </div>
+                <div class="cardSection">
+                  <span class="cardIcon">
+                    <img src="assets/icons8-europe-50.png" alt="" />
+                  </span>
+                  <span class="cardDetailTitle">کشور:</span>
+                  <span class="cardDetailName"> لهستان </span>
+                </div>
+                <div class="cardSection">
+                  <span class="cardIcon">
+                    <img src="assets/icons8-advertisement-page-50.png" alt="" />
+                  </span>
+                  <span class="cardDetailTitle">کیفیت:</span>
+                  <span class="cardDetailName">HD</span>
+                </div>
+                <div class="cardSection">
+                  <span class="cardIcon">
+                    <img src="assets/icons8-user-50.png" alt="" />
+                  </span>
+                  <span class="cardDetailTitle">بازیگران:</span>
+                  <span class="cardDetailName"
+                    >Hubert Milkowski، Marek Kalita، Tomasz Zietek</span
+                  >
+                </div>
+                <div class="cardSection">
+                  <span class="cardIcon">
+                    <img src="assets/icons8-documentary-50.png" alt="" />
+                  </span>
+                  <span class="cardDetailTitle">کارگردان:</span>
+                  <span class="cardDetailName"> Piotr Domalewski </span>
+                </div>
+              </div>
+              <div class="cardDescrib">
+                <span>
+                  یک افسر جوان در ورشوی کمونیستی که از نتیجه تحقیقات قتل راضی
+                  نیست، به تنهایی به دنبال کشف حقیقت می شود.
+                </span>
+              </div>
+              <div class="cardFooter">
+                <div class="cardTagContainer">
+                  <span class="cardTag">زیرنویس چسبیده</span>
+                  <span class="cardTag">پخش آنلاین</span>
+                  <span class="cardTag">زبان اصلی</span>
+                </div>
+                <div class="cardDownload">
+                  <span>دانلود سریال</span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="cardContainer">
+            <div class="cardImage">
+              <img src="assets/img/c4.webp" alt="" />
+            </div>
+            <div class="cardDetails">
+              <div class="cardHeader">
+                <div class="cardTitle">
+                  <span>دانلود فیلم هردیام</span>
+                </div>
+                <div class="cardScore">
+                  <img src="assets/icons8-imdb-48.png" alt="" />
+                  <div class="scoreNumb">
+                    <span>10/</span>
+                    <span class="score">8.1</span>
+                  </div>
+                </div>
+              </div>
+              <div class="mainCard">
+                <div class="cardSection">
+                  <span class="cardIcon">
+                    <img src="assets/icons8-sheets-24.png" alt="" />
+                  </span>
+                  <span class="cardDetailTitle">ژانر:</span>
+                  <span class="cardDetailName">درام,رمانتیک</span>
+                </div>
+                <div class="cardSection">
+                  <span class="cardIcon">
+                    <img src="assets/icons8-europe-50.png" alt="" />
+                  </span>
+                  <span class="cardDetailTitle">کشور:</span>
+                  <span class="cardDetailName"> هند </span>
+                </div>
+                <div class="cardSection">
+                  <span class="cardIcon">
+                    <img src="assets/icons8-advertisement-page-50.png" alt="" />
+                  </span>
+                  <span class="cardDetailTitle">کیفیت:</span>
+                  <span class="cardDetailName">HD</span>
+                </div>
+                <div class="cardSection">
+                  <span class="cardIcon">
+                    <img src="assets/icons8-user-50.png" alt="" />
+                  </span>
+                  <span class="cardDetailTitle">بازیگران:</span>
+                  <span class="cardDetailName">
+                    Darshana Rajendran، Kalyani Priyadarshan، Pranav Mohanlal
+                  </span>
+                </div>
+                <div class="cardSection">
+                  <span class="cardIcon">
+                    <img src="assets/icons8-documentary-50.png" alt="" />
+                  </span>
+                  <span class="cardDetailTitle">کارگردان:</span>
+                  <span class="cardDetailName">Vineeth Sreenivasan</span>
+                </div>
+              </div>
+              <div class="cardDescrib">
+                <span>
+                  سفر احساسی آرون، روزهای بی دغدغه لیسانس او در کالج مهندسی، و
+                  چگونگی بلوغ او در مراحل مختلف زندگی.
+                </span>
+              </div>
+              <div class="cardFooter">
+                <div class="cardTagContainer">
+                  <span class="cardTag">زیرنویس چسبیده</span>
+                  <span class="cardTag">پخش آنلاین</span>
+                  <span class="cardTag">زبان اصلی</span>
+                </div>
+                <div class="cardDownload">
+                  <span>دانلود سریال</span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="cardContainer">
+            <div class="cardImage">
+              <img src="assets/img/c5.webp" alt="" />
+            </div>
+            <div class="cardDetails">
+              <div class="cardHeader">
+                <div class="cardTitle">
+                  <span>دانلود فیلم زیبایی</span>
+                </div>
+                <div class="cardScore">
+                  <img src="assets/icons8-imdb-48.png" alt="" />
+                  <div class="scoreNumb">
+                    <span>10/</span>
+                    <span class="score">4.1</span>
+                  </div>
+                </div>
+              </div>
+              <div class="mainCard">
+                <div class="cardSection">
+                  <span class="cardIcon">
+                    <img src="assets/icons8-sheets-24.png" alt="" />
+                  </span>
+                  <span class="cardDetailTitle">ژانر:</span>
+                  <span class="cardDetailName">درام,رمانتیک</span>
+                </div>
+                <div class="cardSection">
+                  <span class="cardIcon">
+                    <img src="assets/icons8-europe-50.png" alt="" />
+                  </span>
+                  <span class="cardDetailTitle">کشور:</span>
+                  <span class="cardDetailName"> آمریکا </span>
+                </div>
+                <div class="cardSection">
+                  <span class="cardIcon">
+                    <img src="assets/icons8-advertisement-page-50.png" alt="" />
+                  </span>
+                  <span class="cardDetailTitle">کیفیت:</span>
+                  <span class="cardDetailName">HD</span>
+                </div>
+                <div class="cardSection">
+                  <span class="cardIcon">
+                    <img src="assets/icons8-user-50.png" alt="" />
+                  </span>
+                  <span class="cardDetailTitle">بازیگران:</span>
+                  <span class="cardDetailName">
+                    Aleyse Shannon، Gracie Marie Bradley، Niecy Nash
+                  </span>
+                </div>
+                <div class="cardSection">
+                  <span class="cardIcon">
+                    <img src="assets/icons8-documentary-50.png" alt="" />
+                  </span>
+                  <span class="cardDetailTitle">کارگردان:</span>
+                  <span class="cardDetailName">Andrew Dosunmu</span>
+                </div>
+              </div>
+              <div class="cardDescrib">
+                <span> - </span>
+              </div>
+              <div class="cardFooter">
+                <div class="cardTagContainer">
+                  <span class="cardTag">زیرنویس چسبیده</span>
+                  <span class="cardTag">پخش آنلاین</span>
+                  <span class="cardTag">زبان اصلی</span>
+                </div>
+                <div class="cardDownload">
+                  <span>دانلود سریال</span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="cardContainer">
+            <div class="cardImage">
+              <img src="assets/img/c6.webp" alt="" />
+            </div>
+            <div class="cardDetails">
+              <div class="cardHeader">
+                <div class="cardTitle">
+                  <span>دانلود فیلم زندان</span>
+                </div>
+                <div class="cardScore">
+                  <img src="assets/icons8-imdb-48.png" alt="" />
+                  <div class="scoreNumb">
+                    <span>10/</span>
+                    <span class="score">4.8</span>
+                  </div>
+                </div>
+              </div>
+              <div class="mainCard">
+                <div class="cardSection">
+                  <span class="cardIcon">
+                    <img src="assets/icons8-sheets-24.png" alt="" />
+                  </span>
+                  <span class="cardDetailTitle">ژانر:</span>
+                  <span class="cardDetailName">اکشن,جنایی</span>
+                </div>
+                <div class="cardSection">
+                  <span class="cardIcon">
+                    <img src="assets/icons8-europe-50.png" alt="" />
+                  </span>
+                  <span class="cardDetailTitle">کشور:</span>
+                  <span class="cardDetailName"> هند </span>
+                </div>
+                <div class="cardSection">
+                  <span class="cardIcon">
+                    <img src="assets/icons8-advertisement-page-50.png" alt="" />
+                  </span>
+                  <span class="cardDetailTitle">کیفیت:</span>
+                  <span class="cardDetailName">HD</span>
+                </div>
+                <div class="cardSection">
+                  <span class="cardIcon">
+                    <img src="assets/icons8-user-50.png" alt="" />
+                  </span>
+                  <span class="cardDetailTitle">بازیگران:</span>
+                  <span class="cardDetailName">
+                    Abarnathi، Aparnathi، Premgi Amaren
+                  </span>
+                </div>
+                <div class="cardSection">
+                  <span class="cardIcon">
+                    <img src="assets/icons8-documentary-50.png" alt="" />
+                  </span>
+                  <span class="cardDetailTitle">کارگردان:</span>
+                  <span class="cardDetailName">Vasanthabalan</span>
+                </div>
+              </div>
+              <div class="cardDescrib">
+                <span>
+                  سه دوست کارنان (جی وی پراکاش کومار) یک دزد، کالای (پاسانگا
+                  پاندی) یک محکوم سابق و راکی (ناندان رام) یک فروشنده
+                </span>
+              </div>
+              <div class="cardFooter">
+                <div class="cardTagContainer">
+                  <span class="cardTag">زیرنویس چسبیده</span>
+                  <span class="cardTag">پخش آنلاین</span>
+                  <span class="cardTag">زبان اصلی</span>
+                </div>
+                <div class="cardDownload">
+                  <span>دانلود سریال</span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="cardContainer">
+            <div class="cardImage">
+              <img src="assets/img/c7.webp" alt="" />
+            </div>
+            <div class="cardDetails">
+              <div class="cardHeader">
+                <div class="cardTitle">
+                  <span>دانلود انیمیشن کریسمس بیگانه</span>
+                </div>
+                <div class="cardScore">
+                  <img src="assets/icons8-imdb-48.png" alt="" />
+                  <div class="scoreNumb">
+                    <span>10/</span>
+                    <span class="score">6.2</span>
+                  </div>
+                </div>
+              </div>
+              <div class="mainCard">
+                <div class="cardSection">
+                  <span class="cardIcon">
+                    <img src="assets/icons8-sheets-24.png" alt="" />
+                  </span>
+                  <span class="cardDetailTitle">ژانر:</span>
+                  <span class="cardDetailName">انیمیشن,کوتاه</span>
+                </div>
+                <div class="cardSection">
+                  <span class="cardIcon">
+                    <img src="assets/icons8-europe-50.png" alt="" />
+                  </span>
+                  <span class="cardDetailTitle">کشور:</span>
+                  <span class="cardDetailName"> آمریکا </span>
+                </div>
+                <div class="cardSection">
+                  <span class="cardIcon">
+                    <img src="assets/icons8-advertisement-page-50.png" alt="" />
+                  </span>
+                  <span class="cardDetailTitle">کیفیت:</span>
+                  <span class="cardDetailName">HD</span>
+                </div>
+                <div class="cardSection">
+                  <span class="cardIcon">
+                    <img src="assets/icons8-user-50.png" alt="" />
+                  </span>
+                  <span class="cardDetailTitle">بازیگران:</span>
+                  <span class="cardDetailName">
+                    Dee Bradley Baker، Kaliayh Rhambo، Keythe Farley
+                  </span>
+                </div>
+                <div class="cardSection">
+                  <span class="cardIcon">
+                    <img src="assets/icons8-documentary-50.png" alt="" />
+                  </span>
+                  <span class="cardDetailTitle">کارگردان:</span>
+                  <span class="cardDetailName">Stephen Chiodo</span>
+                </div>
+              </div>
+              <div class="cardDescrib">
+                <span>
+                  هنگامی که فرازمینی ها تلاش می کنند جاذبه زمین را بدزدند، تنها
+                  روح هدیه دهنده کریسمس - و یک بیگانه کوچک به نام X -
+                </span>
+              </div>
+              <div class="cardFooter">
+                <div class="cardTagContainer">
+                  <span class="cardTag">زیرنویس چسبیده</span>
+                  <span class="cardTag">پخش آنلاین</span>
+                  <span class="cardTag">زبان اصلی</span>
+                  <span class="cardTag">دوبله</span>
+                </div>
+                <div class="cardDownload">
+                  <span>دانلود سریال</span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="cardContainer">
+            <div class="cardImage">
+              <img src="assets/img/c8.webp" alt="" />
+            </div>
+            <div class="cardDetails">
+              <div class="cardHeader">
+                <div class="cardTitle">
+                  <span>دانلود فیلم الهه دانا</span>
+                </div>
+                <div class="cardScore">
+                  <img src="assets/icons8-imdb-48.png" alt="" />
+                  <div class="scoreNumb">
+                    <span>10/</span>
+                    <span class="score">6.6</span>
+                  </div>
+                </div>
+              </div>
+              <div class="mainCard">
+                <div class="cardSection">
+                  <span class="cardIcon">
+                    <img src="assets/icons8-sheets-24.png" alt="" />
+                  </span>
+                  <span class="cardDetailTitle">ژانر:</span>
+                  <span class="cardDetailName">درام,فانتزی</span>
+                </div>
+                <div class="cardSection">
+                  <span class="cardIcon">
+                    <img src="assets/icons8-europe-50.png" alt="" />
+                  </span>
+                  <span class="cardDetailTitle">کشور:</span>
+                  <span class="cardDetailName"> هند </span>
+                </div>
+                <div class="cardSection">
+                  <span class="cardIcon">
+                    <img src="assets/icons8-advertisement-page-50.png" alt="" />
+                  </span>
+                  <span class="cardDetailTitle">کیفیت:</span>
+                  <span class="cardDetailName">HD</span>
+                </div>
+                <div class="cardSection">
+                  <span class="cardIcon">
+                    <img src="assets/icons8-user-50.png" alt="" />
+                  </span>
+                  <span class="cardDetailTitle">بازیگران:</span>
+                  <span class="cardDetailName">
+                    Nayanthara، RJ Balaji، Urvashi
+                  </span>
+                </div>
+                <div class="cardSection">
+                  <span class="cardIcon">
+                    <img src="assets/icons8-documentary-50.png" alt="" />
+                  </span>
+                  <span class="cardDetailTitle">کارگردان:</span>
+                  <span class="cardDetailName">N.J. Saravanan</span>
+                </div>
+              </div>
+              <div class="cardDescrib">
+                <span> - </span>
+              </div>
+              <div class="cardFooter">
+                <div class="cardTagContainer">
+                  <span class="cardTag">زیرنویس چسبیده</span>
+                  <span class="cardTag">پخش آنلاین</span>
+                  <span class="cardTag">زبان اصلی</span>
+                </div>
+                <div class="cardDownload">
+                  <span>دانلود سریال</span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="cardContainer">
+            <div class="cardImage">
+              <img src="assets/img/c9.webp" alt="" />
+            </div>
+            <div class="cardDetails">
+              <div class="cardHeader">
+                <div class="cardTitle">
+                  <span>دانلود فیلم قهرمان</span>
+                </div>
+                <div class="cardScore">
+                  <img src="assets/icons8-imdb-48.png" alt="" />
+                  <div class="scoreNumb">
+                    <span>10/</span>
+                    <span class="score">5.8</span>
+                  </div>
+                </div>
+              </div>
+              <div class="mainCard">
+                <div class="cardSection">
+                  <span class="cardIcon">
+                    <img src="assets/icons8-sheets-24.png" alt="" />
+                  </span>
+                  <span class="cardDetailTitle">ژانر:</span>
+                  <span class="cardDetailName">اکشن,</span>
+                </div>
+                <div class="cardSection">
+                  <span class="cardIcon">
+                    <img src="assets/icons8-europe-50.png" alt="" />
+                  </span>
+                  <span class="cardDetailTitle">کشور:</span>
+                  <span class="cardDetailName"> هند </span>
+                </div>
+                <div class="cardSection">
+                  <span class="cardIcon">
+                    <img src="assets/icons8-advertisement-page-50.png" alt="" />
+                  </span>
+                  <span class="cardDetailTitle">کیفیت:</span>
+                  <span class="cardDetailName">HD</span>
+                </div>
+                <div class="cardSection">
+                  <span class="cardIcon">
+                    <img src="assets/icons8-user-50.png" alt="" />
+                  </span>
+                  <span class="cardDetailTitle">بازیگران:</span>
+                  <span class="cardDetailName">
+                    Ashok Galla، Jagapathi Babu، Nidhhi Agerwal
+                  </span>
+                </div>
+                <div class="cardSection">
+                  <span class="cardIcon">
+                    <img src="assets/icons8-documentary-50.png" alt="" />
+                  </span>
+                  <span class="cardDetailTitle">کارگردان:</span>
+                  <span class="cardDetailName">Sriram Adittya</span>
+                </div>
+              </div>
+              <div class="cardDescrib">
+                <span>
+                  آرجون که با دریافت اسلحه در یک پیک، زندگی او تغییر چشمگیری
+                  پیدا می کند.
+                </span>
+              </div>
+              <div class="cardFooter">
+                <div class="cardTagContainer">
+                  <span class="cardTag">زیرنویس چسبیده</span>
+                  <span class="cardTag">پخش آنلاین</span>
+                  <span class="cardTag">زبان اصلی</span>
+                </div>
+                <div class="cardDownload">
+                  <span>دانلود سریال</span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="cardContainer">
+            <div class="cardImage">
+              <img src="assets/img/c10.webp" alt="" />
+            </div>
+            <div class="cardDetails">
+              <div class="cardHeader">
+                <div class="cardTitle">
+                  <span>دانلود فیلم منصانه بدست بیاور</span>
+                </div>
+                <div class="cardScore">
+                  <img src="assets/icons8-imdb-48.png" alt="" />
+                  <div class="scoreNumb">
+                    <span>10/</span>
+                    <span class="score">6.3</span>
+                  </div>
+                </div>
+              </div>
+              <div class="mainCard">
+                <div class="cardSection">
+                  <span class="cardIcon">
+                    <img src="assets/icons8-sheets-24.png" alt="" />
+                  </span>
+                  <span class="cardDetailTitle">ژانر:</span>
+                  <span class="cardDetailName">هیجان انگیز,جنایی</span>
+                </div>
+                <div class="cardSection">
+                  <span class="cardIcon">
+                    <img src="assets/icons8-europe-50.png" alt="" />
+                  </span>
+                  <span class="cardDetailTitle">کشور:</span>
+                  <span class="cardDetailName"> آمریکا </span>
+                </div>
+                <div class="cardSection">
+                  <span class="cardIcon">
+                    <img src="assets/icons8-advertisement-page-50.png" alt="" />
+                  </span>
+                  <span class="cardDetailTitle">کیفیت:</span>
+                  <span class="cardDetailName">HD</span>
+                </div>
+                <div class="cardSection">
+                  <span class="cardIcon">
+                    <img src="assets/icons8-user-50.png" alt="" />
+                  </span>
+                  <span class="cardDetailTitle">بازیگران:</span>
+                  <span class="cardDetailName">
+                    Kali Reis، Kendall Morris، Shelly Vincent
+                  </span>
+                </div>
+                <div class="cardSection">
+                  <span class="cardIcon">
+                    <img src="assets/icons8-documentary-50.png" alt="" />
+                  </span>
+                  <span class="cardDetailTitle">کارگردان:</span>
+                  <span class="cardDetailName">Josef Kubota Wladyka</span>
+                </div>
+              </div>
+              <div class="cardDescrib">
+                <span> - </span>
+              </div>
+              <div class="cardFooter">
+                <div class="cardTagContainer">
+                  <span class="cardTag">زیرنویس چسبیده</span>
+                  <span class="cardTag">پخش آنلاین</span>
+                  <span class="cardTag">زبان اصلی</span>
+                </div>
+                <div class="cardDownload">
+                  <span>دانلود سریال</span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="cardContainer">
+            <div class="cardImage">
+              <img src="assets/img/c11.webp" alt="" />
+            </div>
+            <div class="cardDetails">
+              <div class="cardHeader">
+                <div class="cardTitle">
+                  <span>دانلود فیلم گل خون</span>
+                </div>
+                <div class="cardScore">
+                  <img src="assets/icons8-imdb-48.png" alt="" />
+                  <div class="scoreNumb">
+                    <span>10/</span>
+                    <span class="score">5.5</span>
+                  </div>
+                </div>
+              </div>
+              <div class="mainCard">
+                <div class="cardSection">
+                  <span class="cardIcon">
+                    <img src="assets/icons8-sheets-24.png" alt="" />
+                  </span>
+                  <span class="cardDetailTitle">ژانر:</span>
+                  <span class="cardDetailName">ترسناک,رازآلود</span>
+                </div>
+                <div class="cardSection">
+                  <span class="cardIcon">
+                    <img src="assets/icons8-europe-50.png" alt="" />
+                  </span>
+                  <span class="cardDetailTitle">کشور:</span>
+                  <span class="cardDetailName"> مالزی </span>
+                </div>
+                <div class="cardSection">
+                  <span class="cardIcon">
+                    <img src="assets/icons8-advertisement-page-50.png" alt="" />
+                  </span>
+                  <span class="cardDetailTitle">کیفیت:</span>
+                  <span class="cardDetailName">HD</span>
+                </div>
+                <div class="cardSection">
+                  <span class="cardIcon">
+                    <img src="assets/icons8-user-50.png" alt="" />
+                  </span>
+                  <span class="cardDetailTitle">بازیگران:</span>
+                  <span class="cardDetailName">
+                    Bront Palarae، Idan Aedan، Remy Ishak
+                  </span>
+                </div>
+                <div class="cardSection">
+                  <span class="cardIcon">
+                    <img src="assets/icons8-documentary-50.png" alt="" />
+                  </span>
+                  <span class="cardDetailTitle">کارگردان:</span>
+                  <span class="cardDetailName">Dain Said</span>
+                </div>
+              </div>
+              <div class="cardDescrib">
+                <span>
+                  داستان فیلم در مورد یک شاگرد شفا دهنده جوان سعی می کند توانایی
+                  های ماوراء طبیعی خود را سرکوب کند تا...
+                </span>
+              </div>
+              <div class="cardFooter">
+                <div class="cardTagContainer">
+                  <span class="cardTag">زیرنویس چسبیده</span>
+                  <span class="cardTag">پخش آنلاین</span>
+                  <span class="cardTag">زبان اصلی</span>
+                </div>
+                <div class="cardDownload">
+                  <span>دانلود سریال</span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="cardContainer">
+            <div class="cardImage">
+              <img src="assets/img/c12.webp" alt="" />
+            </div>
+            <div class="cardDetails">
+              <div class="cardHeader">
+                <div class="cardTitle">
+                  <span>دانلود فیلم کلبه استخوان کوچک</span>
+                </div>
+                <div class="cardScore">
+                  <img src="assets/icons8-imdb-48.png" alt="" />
+                  <div class="scoreNumb">
+                    <span>10/</span>
+                    <span class="score">6.3</span>
+                  </div>
+                </div>
+              </div>
+              <div class="mainCard">
+                <div class="cardSection">
+                  <span class="cardIcon">
+                    <img src="assets/icons8-sheets-24.png" alt="" />
+                  </span>
+                  <span class="cardDetailTitle">ژانر:</span>
+                  <span class="cardDetailName">ترسناک,جنایی</span>
+                </div>
+                <div class="cardSection">
+                  <span class="cardIcon">
+                    <img src="assets/icons8-europe-50.png" alt="" />
+                  </span>
+                  <span class="cardDetailTitle">کشور:</span>
+                  <span class="cardDetailName"> انگلستان </span>
+                </div>
+                <div class="cardSection">
+                  <span class="cardIcon">
+                    <img src="assets/icons8-advertisement-page-50.png" alt="" />
+                  </span>
+                  <span class="cardDetailTitle">کیفیت:</span>
+                  <span class="cardDetailName">HD</span>
+                </div>
+                <div class="cardSection">
+                  <span class="cardIcon">
+                    <img src="assets/icons8-user-50.png" alt="" />
+                  </span>
+                  <span class="cardDetailTitle">بازیگران:</span>
+                  <span class="cardDetailName">
+                    Joely Richardson، Neil Linpow، Sadie Soverall
+                  </span>
+                </div>
+                <div class="cardSection">
+                  <span class="cardIcon">
+                    <img src="assets/icons8-documentary-50.png" alt="" />
+                  </span>
+                  <span class="cardDetailTitle">کارگردان:</span>
+                  <span class="cardDetailName">Matthias Hoene</span>
+                </div>
+              </div>
+              <div class="cardDescrib">
+                <span>
+                  در طول یک طوفان بسیار شریر، دو برادر جنایتکار در حال فرار به
+                  یک خانه مزرعه متروک پناه می برند
+                </span>
+              </div>
+              <div class="cardFooter">
+                <div class="cardTagContainer">
+                  <span class="cardTag">زیرنویس چسبیده</span>
+                  <span class="cardTag">پخش آنلاین</span>
+                  <span class="cardTag">زبان اصلی</span>
+                </div>
+                <div class="cardDownload">
+                  <span>دانلود سریال</span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="cardContainer">
+            <div class="cardImage">
+              <img src="assets/img/c13.webp" alt="" />
+            </div>
+            <div class="cardDetails">
+              <div class="cardHeader">
+                <div class="cardTitle">
+                  <span>دانلود فیلم داستان پلیس جدید</span>
+                </div>
+                <div class="cardScore">
+                  <img src="assets/icons8-imdb-48.png" alt="" />
+                  <div class="scoreNumb">
+                    <span>10/</span>
+                    <span class="score">6.9</span>
+                  </div>
+                </div>
+              </div>
+              <div class="mainCard">
+                <div class="cardSection">
+                  <span class="cardIcon">
+                    <img src="assets/icons8-sheets-24.png" alt="" />
+                  </span>
+                  <span class="cardDetailTitle">ژانر:</span>
+                  <span class="cardDetailName">اکشن,جنایی</span>
+                </div>
+                <div class="cardSection">
+                  <span class="cardIcon">
+                    <img src="assets/icons8-europe-50.png" alt="" />
+                  </span>
+                  <span class="cardDetailTitle">کشور:</span>
+                  <span class="cardDetailName"> چین </span>
+                </div>
+                <div class="cardSection">
+                  <span class="cardIcon">
+                    <img src="assets/icons8-advertisement-page-50.png" alt="" />
+                  </span>
+                  <span class="cardDetailTitle">کیفیت:</span>
+                  <span class="cardDetailName">HD</span>
+                </div>
+                <div class="cardSection">
+                  <span class="cardIcon">
+                    <img src="assets/icons8-user-50.png" alt="" />
+                  </span>
+                  <span class="cardDetailTitle">بازیگران:</span>
+                  <span class="cardDetailName">
+                    Charlie Yeung، Jackie Chan، Nicholas Tse
+                  </span>
+                </div>
+                <div class="cardSection">
+                  <span class="cardIcon">
+                    <img src="assets/icons8-documentary-50.png" alt="" />
+                  </span>
+                  <span class="cardDetailTitle">کارگردان:</span>
+                  <span class="cardDetailName">Benny Chan</span>
+                </div>
+              </div>
+              <div class="cardDescrib">
+                <span>
+                  داستان فیلم در مورد یک پلیس قهرمان به طور تصادفی تیم خود را به
+                  دامی می برد که تنها بازمانده از آن است که...
+                </span>
+              </div>
+              <div class="cardFooter">
+                <div class="cardTagContainer">
+                  <span class="cardTag">زیرنویس چسبیده</span>
+                  <span class="cardTag">پخش آنلاین</span>
+                  <span class="cardTag">زبان اصلی</span>
+                </div>
+                <div class="cardDownload">
+                  <span>دانلود سریال</span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <hr />
+          <div class="newConatiner">
+            <h3>اخبار دنیای سینما</h3>
+            <div class="news">
+              <div class="newsPic">
+                <img src="assets/img/news.png" alt="" />
+                <div class="newsPicDetails">
+                  <span class="newsTitle"
+                    >میاگاث: maXXXine یک فیلم ابرقهرمانی است</span
+                  >
+                  <span class="newsAgo">3 ماه پیش</span>
+                </div>
+              </div>
+              <div class="newsText">
+                <div class="newsTextitem">
+                  <span class="newsTitle"
+                    >دیوید لینچ در جشنواره کن ۲۰۲۳ حضور پیدا می‌کند</span
+                  >
+                  <span class="newsAgo">3 ماه پیش</span>
+                </div>
+                <div class="newsTextitem">
+                  <span class="newsTitle"
+                    >قطع همکاری با جاناتان میجرز پس از متهم شدن به خشونت
+                    خانگی</span
+                  >
+                  <span class="newsAgo">3 ماه پیش</span>
+                </div>
+                <div class="newsTextitem">
+                  <span class="newsTitle"
+                    >سیلوستر استالونه در فیلم اکشن و کمدی Never Too Old to
+                    Die</span
+                  >
+                  <span class="newsAgo">3 ماه پیش</span>
+                </div>
+              </div>
+            </div>
+            <a href="#" class="moreNews">بیشتر</a>
+          </div>
+        </div>
+        <div class="sideBar">
+          <div class="sugestion">
+            <div class="sugestionItem">
+              <img src="assets/img/s1.jpg" alt="" />
+              <span>Shingeki no Kyojin</span>
+            </div>
+            <div class="sugestionItem">
+              <img src="assets/img/s2.webp" alt="" />
+              <span>chainsaw man</span>
+            </div>
+            <div class="sugestionItem">
+              <img src="assets/img/s3.jpg" alt="" />
+              <span>chapelwait</span>
+            </div>
+            <div class="sugestionItem">
+              <img src="assets/img/s4.jpg" alt="" />
+              <span>beau sejour</span>
+            </div>
+            <div class="sugestionItem">
+              <img src="assets/img/s5.jpg" alt="" />
+              <span>money heist - joint economic </span>
+            </div>
+            <div class="sugestionItem">
+              <img src="assets/img/s6.jpg" alt="" />
+              <span>nine perfect stranger</span>
+            </div>
+            <div class="sugestionItem">
+              <img src="assets/img/s7.jpg" alt="" />
+              <span>open your eyes</span>
+            </div>
+            <div class="sugestionItem">
+              <img src="assets/img/s8.webp" alt="" />
+              <span>silo</span>
+            </div>
+            <div class="sugestionItem">
+              <img src="assets/img/s9.jpg" alt="" />
+              <span>the english</span>
+            </div>
+            <div class="sugestionItem">
+              <img src="assets/img/s10.webp" alt="" />
+              <span>the last of us</span>
+            </div>
+            <div class="sugestionItem">
+              <img src="assets/img/s11.webp" alt="" />
+              <span>the walking dead - dead city</span>
+            </div>
+            <div class="sugestionItem">
+              <img src="assets/img/s12.jpg" alt="" />
+              <span>vigil</span>
+            </div>
+          </div>
+          <div class="telegram">
+            <div>
+              <img src="assets/icons8-telegram-48.png" alt="" />
+              <span>کانال تلگرام ما</span>
+            </div>
+            <img src="assets/icons8-left-50.png" alt="" class="arrowleft" />
+          </div>
+          <div class="instagram">
+            <div>
+              <img src="assets/icons8-instagram-48.png" alt="" />
+              <span>صفحه اینستاگرام ما</span>
+            </div>
+            <img src="assets/icons8-left-50.png" alt="" class="arrowleft" />
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="footer">
+      <div class="copyRight">تمامی اطلاعات متعلق به من میباشد</div>
+      <hr />
+      <div class="tagItems">
+        <span class="footerTag">دانلود فیلم</span>
+        <span class="footerTag">دانلود فیلم خارجی</span>
+        <span class="footerTag">دانلود فیلم ایرانی</span>
+        <span class="footerTag">دانلود فیلم جدید</span>
+        <span class="footerTag">دانلود سریال</span>
+        <span class="footerTag">دانلود انیمیشن</span>
+        <span class="footerTag">آپلود عکس</span>
+        <span class="footerTag">دانلود سریال پوست شیر</span>
+        <span class="footerTag">سریال ترکی</span>
+        <span class="footerTag">دانلود سریال خون سرد</span>
+        <span class="footerTag">دانلود سریال شبکه مخفی زنان</span>
+        <span class="footerTag">ارتباط با ما</span>
+      </div>
+    </div>
+  </body>
+  <script src="js/app.js"></script>
+</html>

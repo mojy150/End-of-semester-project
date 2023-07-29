@@ -1,0 +1,189 @@
+@font-face {
+    font-family: sahel;
+    src: url(../assets/fonts/Sahel.eot);
+    src: url(../assets/fonts/Sahel.ttf) format("ttf");
+    src: url(../assets/fonts/Sahel.woff) format("woff");
+    font-weight: normal;
+}
+
+body {
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #18181e;
+    height: 100vh;
+    font-family: sahel;
+    flex-direction: column;
+}
+
+.container {
+    width: 90%;
+    height: 90%;
+    border-radius: 10px;
+    border: 4px solid #424253;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    flex-direction: row-reverse;
+}
+
+.container .panelItems {
+    width: 49.5%;
+    height: 49%;
+    border-radius: 10px;
+    border: 2px solid #7c7c9e;
+    margin: 0;
+}
+
+.container .panelItems {
+    width: 49.5%;
+    height: 49%;
+    border-radius: 10px;
+    border: 2px solid #7c7c9e;
+    margin: 0;
+    display: flex;
+    flex-direction: row-reverse;
+}
+
+.container .panelItems .profContainer {
+    margin: 0 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    height: 100%;
+}
+
+.container .panelItems .profile {
+    display: flex;
+    justify-content: start;
+    direction: rtl;
+    align-items: center;
+}
+
+.container .panelItems .profTitle {
+    font-weight: bolder;
+    color: aliceblue;
+    font-size: 20px;
+}
+
+.container .panelItems .profileDetail {
+    margin-right: 20px;
+    color: #cdcdcd;
+}
+
+.container .panelItems .panelTitle {
+    color: #c4c4c4;
+    font-size: 20px;
+    font-weight: bolder;
+    height: 100%;
+    width: 20%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-left: 2px solid #7c7c9e;
+}
+
+.container .panelItems .number {
+    direction: ltr;
+}
+
+.container .panelItems .inputDetails {
+    font-family: sahel;
+    text-indent: 5px;
+    margin-right: 20px;
+    border-radius: 4px;
+    border: 0;
+    background-color: #c4c4c4;
+    height: 25px;
+
+}
+
+.container .panelItems .inputDetails:focus {
+    outline: none;
+}
+
+.container .panelItems .submitDetails {
+    background-color: rgb(72, 195, 72);
+    height: 25px;
+    border: 0;
+    border-radius: 4px;
+    font-family: sahel;
+    cursor: pointer;
+}
+
+
+.trendContainer {
+    width: 80%;
+    direction: rtl;
+}
+
+.trendItems {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    height: 100%;
+}
+
+.trendItems>.trendItem {
+    border-radius: 5px;
+    position: relative;
+    height: 44%;
+    width: 45%;
+    overflow: hidden;
+}
+
+.trendItems .trendImg {
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+
+.trendItems .trendImg img {
+    display: block;
+    width: 100%;
+}
+
+.trendItems .trendItemTitle {
+    display: flex;
+    width: 100%;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 0;
+    right: 0;
+    font-weight: bold;
+    font-size: 19px;
+    text-align: center;
+    opacity: 0;
+    visibility: hidden;
+    transition: all 500ms;
+}
+
+.trendItem:hover .trendItemTitle {
+    display: flex;
+    width: 100%;
+    height: 100%;
+    background: rgb(255, 255, 255);
+    background: linear-gradient(180deg, rgba(255, 255, 255, 0) 0%, rgba(0, 0, 0, 0.3) 21%, rgba(0, 0, 0, 0.5) 39%, rgba(0, 0, 0, 0.8) 61%, rgba(0, 0, 0, 1) 100%);
+    color: #b3b3b3;
+    font-weight: bold;
+    opacity: 1;
+    visibility: visible;
+}
+
+.home {
+    margin-bottom: 20px;
+}
+
+.home .homeLink {
+    border: 2px solid #db7114;
+    padding: 5px;
+    border-radius: 5px;
+    color: #db7114;
+    font-weight: bolder;
+    text-decoration: none;
+}
