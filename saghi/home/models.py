@@ -3,12 +3,18 @@ from datetime import datetime
 
 class Genre(models.Model):
     genre = models.CharField(max_length=50)
+    def __str__(self):
+        return f"{self.genre}"
 
 class Actor(models.Model):
     actor = models.CharField(max_length=100)
+    def __str__(self):
+        return f"{self.actor}"
 
 class Director(models.Model):
     director = models.CharField(max_length=100)
+    def __str__(self):
+        return f"{self.director}"
 
 class Movie(models.Model):
     title = models.CharField(max_length=300)
@@ -22,3 +28,5 @@ class Movie(models.Model):
     # poster = 
     date = models.DateTimeField(auto_now_add=True)
     duration = models.IntegerField(default=0)
+    def __str__(self):
+        return f"{self.title}"
