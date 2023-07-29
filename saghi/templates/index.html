@@ -4,8 +4,8 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="{%static "main.css" %}"/>
-    <link rel="stylesheet" href="{%static "slide.css" %}" />
+    <link rel="stylesheet" href="{%static "style/main.css" %}"/>
+    <link rel="stylesheet" href="{%static "style/slide.css" %}" />
     <title>ساقی فیلم</title>
   </head>
   <body>
@@ -13,7 +13,7 @@
       <div class="navbar">
         <div class="leftNav">
           <div class="logo">
-            <img src="assets/img/logo.jpg" alt="logo" />
+            <img src="{%static "assets/img/logo.jpg" %}" alt="logo" />
             <span>ساقی فیلم</span>
           </div>
           <div class="menu">
@@ -21,7 +21,7 @@
               <li class="menuItems">
                 <div class="menuTitle">
                   <span>فیلم دوبله</span>
-                  <img src="assets/openMenu.png" alt="openMenu" />
+                  <img src="{%static "assets/openMenu.png" %}" alt="openMenu" />
                 </div>
                 <ul>
                   <li>اکشن</li>
@@ -52,7 +52,7 @@
               <li class="menuItems">
                 <div class="menuTitle">
                   <span>انیمیشن</span>
-                  <img src="assets/openMenu.png" alt="openMenu" />
+                  <img src="{%static "assets/openMenu.png" %}" alt="openMenu" />
                 </div>
                 <ul>
                   <li>انیمیشن دوبله فارسی</li>
@@ -64,7 +64,7 @@
               <li class="menuItems">
                 <div class="menuTitle">
                   <span>سریال</span>
-                  <img src="assets/openMenu.png" alt="openMenu" />
+                  <img src="{%static "assets/openMenu.png" %}" alt="openMenu" />
                 </div>
                 <ul>
                   <li>سریال ایرانی</li>
@@ -76,7 +76,7 @@
               <li class="menuItems">
                 <div class="menuTitle">
                   <span>مستند</span>
-                  <img src="assets/openMenu.png" alt="openMenu" />
+                  <img src="{%static "assets/openMenu.png" %}" alt="openMenu" />
                 </div>
                 <ul>
                   <li>مستند دوبله فارسی</li>
@@ -91,7 +91,7 @@
           <div class="search">
             <input type="text" placeholder="جست و جو..." />
             <button>
-              <img src="assets/search.png" alt="" />
+              <img src="{%static "assets/search.png" %}" alt="" />
             </button>
           </div>
           <div class="user">
@@ -154,7 +154,7 @@
         <div class="filterItems">
           <div class="fltItmTitle">
             <span>فیلم یا سریال</span>
-            <img src="assets/openMenu.png" alt="" />
+            <img src="{%static "assets/openMenu.png" %}" alt="" />
           </div>
           <ul id="filmAndSerialList">
             <li>
@@ -174,7 +174,7 @@
         <div class="filterItems">
           <div class="fltItmTitle">
             <span>ژانر</span>
-            <img src="assets/openMenu.png" alt="" />
+            <img src="{%static "assets/openMenu.png" %}" alt="" />
           </div>
           <ul id="genreList">
             <li>
@@ -206,7 +206,7 @@
         <div class="filterItems">
           <div class="fltItmTitle">
             <span>از سال</span>
-            <img src="assets/openMenu.png" alt="" />
+            <img src="{%static "assets/openMenu.png" %}" alt="" />
           </div>
           <ul id="fromYearList">
             <li>
@@ -254,7 +254,7 @@
         <div class="filterItems">
           <div class="fltItmTitle">
             <span>تا سال</span>
-            <img src="assets/openMenu.png" alt="" />
+            <img src="{%static "assets/openMenu.png" %}" alt="" />
           </div>
           <ul id="toYearList">
             <li>
@@ -302,7 +302,7 @@
         <div class="filterItems">
           <div class="fltItmTitle">
             <span>امتیاز</span>
-            <img src="assets/openMenu.png" alt="" />
+            <img src="{%static "assets/openMenu.png"%}" alt="" />
           </div>
           <ul id="scoreList">
             <li>
@@ -326,7 +326,7 @@
         <div class="filterItems">
           <div class="fltItmTitle">
             <span>به ترتیب</span>
-            <img src="assets/openMenu.png" alt="" />
+            <img src="{% static "assets/openMenu.png" %}" alt="" />
           </div>
           <ul id="sortList">
             <li>
@@ -359,7 +359,7 @@
         <div class="trendItems">
           <div class="trendItem">
             <div class="trendImg">
-              <img src="assets/img/1.webp" alt="1" />
+              <img src="{% static "assets/img/1.webp" %}" alt="1" />
             </div>
             <div class="trendItemTitle">
               <span>کیسی کا بای کیسی کی جان</span>
@@ -367,7 +367,7 @@
           </div>
           <div class="trendItem">
             <div class="trendImg">
-              <img src="assets/img/2.webp" alt="1" />
+              <img src="{% static "assets/img/2.webp" %}" alt="1" />
             </div>
             <div class="trendItemTitle">
               <span>پیمان</span>
@@ -375,7 +375,7 @@
           </div>
           <div class="trendItem">
             <div class="trendImg">
-              <img src="assets/img/3.webp" alt="1" />
+              <img src="{% static "assets/img/3.webp" %}" alt="1" />
             </div>
             <div class="trendItemTitle">
               <span>قندهار</span>
@@ -383,7 +383,7 @@
           </div>
           <div class="trendItem">
             <div class="trendImg">
-              <img src="assets/img/4.webp" alt="1" />
+              <img src="{% static "assets/img/4.webp" %}" alt="1" />
             </div>
             <div class="trendItemTitle">
               <span>مادر مافیا</span>
@@ -391,7 +391,7 @@
           </div>
           <div class="trendItem">
             <div class="trendImg">
-              <img src="assets/img/5.webp" alt="1" />
+              <img src="{% static "assets/img/5.webp" %}" alt="1" />
             </div>
             <div class="trendItemTitle">
               <span>سوار شو</span>
@@ -399,7 +399,7 @@
           </div>
           <div class="trendItem">
             <div class="trendImg">
-              <img src="assets/img/6.webp" alt="1" />
+              <img src="{% static "assets/img/6.webp" %}" alt="1" />
             </div>
             <div class="trendItemTitle">
               <span>مرد عنگبوتی - آنسوی دنیای عنکبوتی</span>
@@ -412,7 +412,7 @@
         <div class="content">
           <div class="cardContainer">
             <div class="cardImage">
-              <img src="assets/img/c1.webp" alt="" />
+              <img src="{% static "assets/img/c1.webp" %}" alt="" />
             </div>
             <div class="cardDetails">
               <div class="cardHeader">
@@ -420,7 +420,7 @@
                   <span>دانلود سریال ویچر فصل سوم</span>
                 </div>
                 <div class="cardScore">
-                  <img src="assets/icons8-imdb-48.png" alt="" />
+                  <img src="{% static "assets/icons8-imdb-48.png" %}" alt="" />
                   <div class="scoreNumb">
                     <span>10/</span>
                     <span class="score">8.2</span>
@@ -430,14 +430,14 @@
               <div class="mainCard">
                 <div class="cardSection">
                   <span class="cardIcon">
-                    <img src="assets/icons8-sheets-24.png" alt="" />
+                    <img src="{% static 'assets/icons8-sheets-24.png' %}" alt="" />
                   </span>
                   <span class="cardDetailTitle">ژانر:</span>
                   <span class="cardDetailName">اکشن,فانتزی</span>
                 </div>
                 <div class="cardSection">
                   <span class="cardIcon">
-                    <img src="assets/icons8-europe-50.png" alt="" />
+                    <img src="{% static 'assets/icons8-europe-50.png' %}" alt="" />
                   </span>
                   <span class="cardDetailTitle">کشور:</span>
                   <span class="cardDetailName">
@@ -446,14 +446,14 @@
                 </div>
                 <div class="cardSection">
                   <span class="cardIcon">
-                    <img src="assets/icons8-advertisement-page-50.png" alt="" />
+                    <img src="{% static 'assets/icons8-advertisement-page-50.png' %}" alt="" />
                   </span>
                   <span class="cardDetailTitle">کیفیت:</span>
                   <span class="cardDetailName">HD</span>
                 </div>
                 <div class="cardSection">
                   <span class="cardIcon">
-                    <img src="assets/icons8-user-50.png" alt="" />
+                    <img src="{% static 'assets/icons8-user-50.png' %}" alt="" />
                   </span>
                   <span class="cardDetailTitle">بازیگران:</span>
                   <span class="cardDetailName"
@@ -462,7 +462,7 @@
                 </div>
                 <div class="cardSection">
                   <span class="cardIcon">
-                    <img src="assets/icons8-documentary-50.png" alt="" />
+                    <img src="{% static 'assets/icons8-documentary-50.png' %}" alt="" />
                   </span>
                   <span class="cardDetailTitle">کارگردان:</span>
                   <span class="cardDetailName"></span>
@@ -488,7 +488,7 @@
           </div>
           <div class="cardContainer">
             <div class="cardImage">
-              <img src="assets/img/c2.webp" alt="" />
+              <img src="{% static 'assets/img/c2.webp' %}" alt="" />
             </div>
             <div class="cardDetails">
               <div class="cardHeader">
@@ -496,7 +496,7 @@
                   <span>دانلود فیلم یک کیارا</span>
                 </div>
                 <div class="cardScore">
-                  <img src="assets/icons8-imdb-48.png" alt="" />
+                  <img src="{% static 'assets/icons8-imdb-48.png' %}" alt="" />
                   <div class="scoreNumb">
                     <span>10/</span>
                     <span class="score">6.8</span>
@@ -506,28 +506,28 @@
               <div class="mainCard">
                 <div class="cardSection">
                   <span class="cardIcon">
-                    <img src="assets/icons8-sheets-24.png" alt="" />
+                    <img src="{% static 'assets/icons8-sheets-24.png' %}" alt="" />
                   </span>
                   <span class="cardDetailTitle">ژانر:</span>
                   <span class="cardDetailName">درام</span>
                 </div>
                 <div class="cardSection">
                   <span class="cardIcon">
-                    <img src="assets/icons8-europe-50.png" alt="" />
+                    <img src="{% static 'assets/icons8-europe-50.png' %}" alt="" />
                   </span>
                   <span class="cardDetailTitle">کشور:</span>
                   <span class="cardDetailName"> ایتالیا </span>
                 </div>
                 <div class="cardSection">
                   <span class="cardIcon">
-                    <img src="assets/icons8-advertisement-page-50.png" alt="" />
+                    <img src="{% static 'assets/icons8-advertisement-page-50.png' %}" alt="" />
                   </span>
                   <span class="cardDetailTitle">کیفیت:</span>
                   <span class="cardDetailName">HD</span>
                 </div>
                 <div class="cardSection">
                   <span class="cardIcon">
-                    <img src="assets/icons8-user-50.png" alt="" />
+                    <img src="{% static 'assets/icons8-user-50.png' %}" alt="" />
                   </span>
                   <span class="cardDetailTitle">بازیگران:</span>
                   <span class="cardDetailName">
@@ -536,7 +536,7 @@
                 </div>
                 <div class="cardSection">
                   <span class="cardIcon">
-                    <img src="assets/icons8-documentary-50.png" alt="" />
+                    <img src="{% static 'assets/icons8-documentary-50.png' %}" alt="" />
                   </span>
                   <span class="cardDetailTitle">کارگردان:</span>
                   <span class="cardDetailName">Jonas Carpignano</span>
@@ -559,7 +559,7 @@
           </div>
           <div class="cardContainer">
             <div class="cardImage">
-              <img src="assets/img/c3.webp" alt="" />
+              <img src="{% static 'assets/img/c3.webp' %}" alt="" />
             </div>
             <div class="cardDetails">
               <div class="cardHeader">
@@ -567,7 +567,7 @@
                   <span>دانلود فیلم غملیات یاقوت</span>
                 </div>
                 <div class="cardScore">
-                  <img src="assets/icons8-imdb-48.png" alt="" />
+                  <img src="{% static 'assets/icons8-imdb-48.png' %}" alt="" />
                   <div class="scoreNumb">
                     <span>10/</span>
                     <span class="score">6.8</span>
@@ -577,28 +577,28 @@
               <div class="mainCard">
                 <div class="cardSection">
                   <span class="cardIcon">
-                    <img src="assets/icons8-sheets-24.png" alt="" />
+                    <img src="{% static 'assets/icons8-sheets-24.png' %}" alt="" />
                   </span>
                   <span class="cardDetailTitle">ژانر:</span>
                   <span class="cardDetailName">درام,جنایی</span>
                 </div>
                 <div class="cardSection">
                   <span class="cardIcon">
-                    <img src="assets/icons8-europe-50.png" alt="" />
+                    <img src="{% static 'assets/icons8-europe-50.png' %}" alt="" />
                   </span>
                   <span class="cardDetailTitle">کشور:</span>
                   <span class="cardDetailName"> لهستان </span>
                 </div>
                 <div class="cardSection">
                   <span class="cardIcon">
-                    <img src="assets/icons8-advertisement-page-50.png" alt="" />
+                    <img src="{% static 'assets/icons8-advertisement-page-50.png' %}" alt="" />
                   </span>
                   <span class="cardDetailTitle">کیفیت:</span>
                   <span class="cardDetailName">HD</span>
                 </div>
                 <div class="cardSection">
                   <span class="cardIcon">
-                    <img src="assets/icons8-user-50.png" alt="" />
+                    <img src="{% static 'assets/icons8-user-50.png' %}" alt="" />
                   </span>
                   <span class="cardDetailTitle">بازیگران:</span>
                   <span class="cardDetailName"
@@ -607,7 +607,7 @@
                 </div>
                 <div class="cardSection">
                   <span class="cardIcon">
-                    <img src="assets/icons8-documentary-50.png" alt="" />
+                    <img src="{% static 'assets/icons8-documentary-50.png' %}" alt="" />
                   </span>
                   <span class="cardDetailTitle">کارگردان:</span>
                   <span class="cardDetailName"> Piotr Domalewski </span>
@@ -633,7 +633,7 @@
           </div>
           <div class="cardContainer">
             <div class="cardImage">
-              <img src="assets/img/c4.webp" alt="" />
+              <img src="{% static 'assets/img/c4.webp' %}" alt="" />
             </div>
             <div class="cardDetails">
               <div class="cardHeader">
@@ -641,7 +641,7 @@
                   <span>دانلود فیلم هردیام</span>
                 </div>
                 <div class="cardScore">
-                  <img src="assets/icons8-imdb-48.png" alt="" />
+                  <img src="{% static 'assets/icons8-imdb-48.png' %}" alt="" />
                   <div class="scoreNumb">
                     <span>10/</span>
                     <span class="score">8.1</span>
@@ -651,28 +651,28 @@
               <div class="mainCard">
                 <div class="cardSection">
                   <span class="cardIcon">
-                    <img src="assets/icons8-sheets-24.png" alt="" />
+                    <img src="{% static 'assets/icons8-sheets-24.png' %}" alt="" />
                   </span>
                   <span class="cardDetailTitle">ژانر:</span>
                   <span class="cardDetailName">درام,رمانتیک</span>
                 </div>
                 <div class="cardSection">
                   <span class="cardIcon">
-                    <img src="assets/icons8-europe-50.png" alt="" />
+                    <img src="{% static 'assets/icons8-europe-50.png' %}" alt="" />
                   </span>
                   <span class="cardDetailTitle">کشور:</span>
                   <span class="cardDetailName"> هند </span>
                 </div>
                 <div class="cardSection">
                   <span class="cardIcon">
-                    <img src="assets/icons8-advertisement-page-50.png" alt="" />
+                    <img src="{% static 'assets/icons8-advertisement-page-50.png' %}" alt="" />
                   </span>
                   <span class="cardDetailTitle">کیفیت:</span>
                   <span class="cardDetailName">HD</span>
                 </div>
                 <div class="cardSection">
                   <span class="cardIcon">
-                    <img src="assets/icons8-user-50.png" alt="" />
+                    <img src="{% static 'assets/icons8-user-50.png' %}" alt="" />
                   </span>
                   <span class="cardDetailTitle">بازیگران:</span>
                   <span class="cardDetailName">
@@ -681,7 +681,7 @@
                 </div>
                 <div class="cardSection">
                   <span class="cardIcon">
-                    <img src="assets/icons8-documentary-50.png" alt="" />
+                    <img src="{% static 'assets/icons8-documentary-50.png' %}" alt="" />
                   </span>
                   <span class="cardDetailTitle">کارگردان:</span>
                   <span class="cardDetailName">Vineeth Sreenivasan</span>
@@ -707,7 +707,7 @@
           </div>
           <div class="cardContainer">
             <div class="cardImage">
-              <img src="assets/img/c5.webp" alt="" />
+              <img src="{% static 'assets/img/c5.webp' %}" alt="" />
             </div>
             <div class="cardDetails">
               <div class="cardHeader">
@@ -715,7 +715,7 @@
                   <span>دانلود فیلم زیبایی</span>
                 </div>
                 <div class="cardScore">
-                  <img src="assets/icons8-imdb-48.png" alt="" />
+                  <img src="{% static 'assets/icons8-imdb-48.png' %}" alt="" />
                   <div class="scoreNumb">
                     <span>10/</span>
                     <span class="score">4.1</span>
@@ -725,28 +725,28 @@
               <div class="mainCard">
                 <div class="cardSection">
                   <span class="cardIcon">
-                    <img src="assets/icons8-sheets-24.png" alt="" />
+                    <img src="{% static 'assets/icons8-sheets-24.png' %}" alt="" />
                   </span>
                   <span class="cardDetailTitle">ژانر:</span>
                   <span class="cardDetailName">درام,رمانتیک</span>
                 </div>
                 <div class="cardSection">
                   <span class="cardIcon">
-                    <img src="assets/icons8-europe-50.png" alt="" />
+                    <img src="{% static 'assets/icons8-europe-50.png' %}" alt="" />
                   </span>
                   <span class="cardDetailTitle">کشور:</span>
                   <span class="cardDetailName"> آمریکا </span>
                 </div>
                 <div class="cardSection">
                   <span class="cardIcon">
-                    <img src="assets/icons8-advertisement-page-50.png" alt="" />
+                    <img src="{% static 'assets/icons8-advertisement-page-50.png' %}" alt="" />
                   </span>
                   <span class="cardDetailTitle">کیفیت:</span>
                   <span class="cardDetailName">HD</span>
                 </div>
                 <div class="cardSection">
                   <span class="cardIcon">
-                    <img src="assets/icons8-user-50.png" alt="" />
+                    <img src="{% static 'assets/icons8-user-50.png' %}" alt="" />
                   </span>
                   <span class="cardDetailTitle">بازیگران:</span>
                   <span class="cardDetailName">
@@ -755,7 +755,7 @@
                 </div>
                 <div class="cardSection">
                   <span class="cardIcon">
-                    <img src="assets/icons8-documentary-50.png" alt="" />
+                    <img src="{% static 'assets/icons8-documentary-50.png' %}" alt="" />
                   </span>
                   <span class="cardDetailTitle">کارگردان:</span>
                   <span class="cardDetailName">Andrew Dosunmu</span>
@@ -778,7 +778,7 @@
           </div>
           <div class="cardContainer">
             <div class="cardImage">
-              <img src="assets/img/c6.webp" alt="" />
+              <img src="{% static 'assets/img/c6.webp' %}" alt="" />
             </div>
             <div class="cardDetails">
               <div class="cardHeader">
@@ -786,7 +786,7 @@
                   <span>دانلود فیلم زندان</span>
                 </div>
                 <div class="cardScore">
-                  <img src="assets/icons8-imdb-48.png" alt="" />
+                  <img src="{% static 'assets/icons8-imdb-48.png' %}" alt="" />
                   <div class="scoreNumb">
                     <span>10/</span>
                     <span class="score">4.8</span>
@@ -796,28 +796,28 @@
               <div class="mainCard">
                 <div class="cardSection">
                   <span class="cardIcon">
-                    <img src="assets/icons8-sheets-24.png" alt="" />
+                    <img src="{% static 'assets/icons8-sheets-24.png' %}" alt="" />
                   </span>
                   <span class="cardDetailTitle">ژانر:</span>
                   <span class="cardDetailName">اکشن,جنایی</span>
                 </div>
                 <div class="cardSection">
                   <span class="cardIcon">
-                    <img src="assets/icons8-europe-50.png" alt="" />
+                    <img src="{% static 'assets/icons8-europe-50.png' %}" alt="" />
                   </span>
                   <span class="cardDetailTitle">کشور:</span>
                   <span class="cardDetailName"> هند </span>
                 </div>
                 <div class="cardSection">
                   <span class="cardIcon">
-                    <img src="assets/icons8-advertisement-page-50.png" alt="" />
+                    <img src="{% static 'assets/icons8-advertisement-page-50.png' %}" alt="" />
                   </span>
                   <span class="cardDetailTitle">کیفیت:</span>
                   <span class="cardDetailName">HD</span>
                 </div>
                 <div class="cardSection">
                   <span class="cardIcon">
-                    <img src="assets/icons8-user-50.png" alt="" />
+                    <img src="{% static 'assets/icons8-user-50.png' %}" alt="" />
                   </span>
                   <span class="cardDetailTitle">بازیگران:</span>
                   <span class="cardDetailName">
@@ -826,7 +826,7 @@
                 </div>
                 <div class="cardSection">
                   <span class="cardIcon">
-                    <img src="assets/icons8-documentary-50.png" alt="" />
+                    <img src="{% static 'assets/icons8-documentary-50.png' %}" alt="" />
                   </span>
                   <span class="cardDetailTitle">کارگردان:</span>
                   <span class="cardDetailName">Vasanthabalan</span>
@@ -852,7 +852,7 @@
           </div>
           <div class="cardContainer">
             <div class="cardImage">
-              <img src="assets/img/c7.webp" alt="" />
+              <img src="{% static 'assets/img/c7.webp' %}" alt="" />
             </div>
             <div class="cardDetails">
               <div class="cardHeader">
@@ -860,7 +860,7 @@
                   <span>دانلود انیمیشن کریسمس بیگانه</span>
                 </div>
                 <div class="cardScore">
-                  <img src="assets/icons8-imdb-48.png" alt="" />
+                  <img src="{% static 'assets/icons8-imdb-48.png' %}" alt="" />
                   <div class="scoreNumb">
                     <span>10/</span>
                     <span class="score">6.2</span>
@@ -870,28 +870,28 @@
               <div class="mainCard">
                 <div class="cardSection">
                   <span class="cardIcon">
-                    <img src="assets/icons8-sheets-24.png" alt="" />
+                    <img src="{% static 'assets/icons8-sheets-24.png' %}" alt="" />
                   </span>
                   <span class="cardDetailTitle">ژانر:</span>
                   <span class="cardDetailName">انیمیشن,کوتاه</span>
                 </div>
                 <div class="cardSection">
                   <span class="cardIcon">
-                    <img src="assets/icons8-europe-50.png" alt="" />
+                    <img src="{% static 'assets/icons8-europe-50.png' %}" alt="" />
                   </span>
                   <span class="cardDetailTitle">کشور:</span>
                   <span class="cardDetailName"> آمریکا </span>
                 </div>
                 <div class="cardSection">
                   <span class="cardIcon">
-                    <img src="assets/icons8-advertisement-page-50.png" alt="" />
+                    <img src="{% static 'assets/icons8-advertisement-page-50.png' %}" alt="" />
                   </span>
                   <span class="cardDetailTitle">کیفیت:</span>
                   <span class="cardDetailName">HD</span>
                 </div>
                 <div class="cardSection">
                   <span class="cardIcon">
-                    <img src="assets/icons8-user-50.png" alt="" />
+                    <img src="{% static 'assets/icons8-user-50.png' %}" alt="" />
                   </span>
                   <span class="cardDetailTitle">بازیگران:</span>
                   <span class="cardDetailName">
@@ -900,7 +900,7 @@
                 </div>
                 <div class="cardSection">
                   <span class="cardIcon">
-                    <img src="assets/icons8-documentary-50.png" alt="" />
+                    <img src="{% static 'assets/icons8-documentary-50.png' %}" alt="" />
                   </span>
                   <span class="cardDetailTitle">کارگردان:</span>
                   <span class="cardDetailName">Stephen Chiodo</span>
@@ -927,7 +927,7 @@
           </div>
           <div class="cardContainer">
             <div class="cardImage">
-              <img src="assets/img/c8.webp" alt="" />
+              <img src="{% static 'assets/img/c8.webp' %}" alt="" />
             </div>
             <div class="cardDetails">
               <div class="cardHeader">
@@ -935,7 +935,7 @@
                   <span>دانلود فیلم الهه دانا</span>
                 </div>
                 <div class="cardScore">
-                  <img src="assets/icons8-imdb-48.png" alt="" />
+                  <img src="{% static 'assets/icons8-imdb-48.png' %}" alt="" />
                   <div class="scoreNumb">
                     <span>10/</span>
                     <span class="score">6.6</span>
@@ -945,28 +945,28 @@
               <div class="mainCard">
                 <div class="cardSection">
                   <span class="cardIcon">
-                    <img src="assets/icons8-sheets-24.png" alt="" />
+                    <img src="{% static 'assets/icons8-sheets-24.png' %}" alt="" />
                   </span>
                   <span class="cardDetailTitle">ژانر:</span>
                   <span class="cardDetailName">درام,فانتزی</span>
                 </div>
                 <div class="cardSection">
                   <span class="cardIcon">
-                    <img src="assets/icons8-europe-50.png" alt="" />
+                    <img src="{% static 'assets/icons8-europe-50.png' %}" alt="" />
                   </span>
                   <span class="cardDetailTitle">کشور:</span>
                   <span class="cardDetailName"> هند </span>
                 </div>
                 <div class="cardSection">
                   <span class="cardIcon">
-                    <img src="assets/icons8-advertisement-page-50.png" alt="" />
+                    <img src="{% static 'assets/icons8-advertisement-page-50.png' %}" alt="" />
                   </span>
                   <span class="cardDetailTitle">کیفیت:</span>
                   <span class="cardDetailName">HD</span>
                 </div>
                 <div class="cardSection">
                   <span class="cardIcon">
-                    <img src="assets/icons8-user-50.png" alt="" />
+                    <img src="{% static 'assets/icons8-user-50.png' %}" alt="" />
                   </span>
                   <span class="cardDetailTitle">بازیگران:</span>
                   <span class="cardDetailName">
@@ -975,7 +975,7 @@
                 </div>
                 <div class="cardSection">
                   <span class="cardIcon">
-                    <img src="assets/icons8-documentary-50.png" alt="" />
+                    <img src="{% static 'assets/icons8-documentary-50.png' %}" alt="" />
                   </span>
                   <span class="cardDetailTitle">کارگردان:</span>
                   <span class="cardDetailName">N.J. Saravanan</span>
@@ -998,7 +998,7 @@
           </div>
           <div class="cardContainer">
             <div class="cardImage">
-              <img src="assets/img/c9.webp" alt="" />
+              <img src="{% static 'assets/img/c9.webp' %}" alt="" />
             </div>
             <div class="cardDetails">
               <div class="cardHeader">
@@ -1006,7 +1006,7 @@
                   <span>دانلود فیلم قهرمان</span>
                 </div>
                 <div class="cardScore">
-                  <img src="assets/icons8-imdb-48.png" alt="" />
+                  <img src="{% static 'assets/icons8-imdb-48.png' %}" alt="" />
                   <div class="scoreNumb">
                     <span>10/</span>
                     <span class="score">5.8</span>
@@ -1016,28 +1016,28 @@
               <div class="mainCard">
                 <div class="cardSection">
                   <span class="cardIcon">
-                    <img src="assets/icons8-sheets-24.png" alt="" />
+                    <img src="{% static 'assets/icons8-sheets-24.png' %}" alt="" />
                   </span>
                   <span class="cardDetailTitle">ژانر:</span>
                   <span class="cardDetailName">اکشن,</span>
                 </div>
                 <div class="cardSection">
                   <span class="cardIcon">
-                    <img src="assets/icons8-europe-50.png" alt="" />
+                    <img src="{% static 'assets/icons8-europe-50.png' %}" alt="" />
                   </span>
                   <span class="cardDetailTitle">کشور:</span>
                   <span class="cardDetailName"> هند </span>
                 </div>
                 <div class="cardSection">
                   <span class="cardIcon">
-                    <img src="assets/icons8-advertisement-page-50.png" alt="" />
+                    <img src="{% static 'assets/icons8-advertisement-page-50.png' %}" alt="" />
                   </span>
                   <span class="cardDetailTitle">کیفیت:</span>
                   <span class="cardDetailName">HD</span>
                 </div>
                 <div class="cardSection">
                   <span class="cardIcon">
-                    <img src="assets/icons8-user-50.png" alt="" />
+                    <img src="{% static 'assets/icons8-user-50.png' %}" alt="" />
                   </span>
                   <span class="cardDetailTitle">بازیگران:</span>
                   <span class="cardDetailName">
@@ -1046,7 +1046,7 @@
                 </div>
                 <div class="cardSection">
                   <span class="cardIcon">
-                    <img src="assets/icons8-documentary-50.png" alt="" />
+                    <img src="{% static 'assets/icons8-documentary-50.png' %}" alt="" />
                   </span>
                   <span class="cardDetailTitle">کارگردان:</span>
                   <span class="cardDetailName">Sriram Adittya</span>
@@ -1072,7 +1072,7 @@
           </div>
           <div class="cardContainer">
             <div class="cardImage">
-              <img src="assets/img/c10.webp" alt="" />
+              <img src="{% static 'assets/img/c10.webp' %}" alt="" />
             </div>
             <div class="cardDetails">
               <div class="cardHeader">
@@ -1080,7 +1080,7 @@
                   <span>دانلود فیلم منصانه بدست بیاور</span>
                 </div>
                 <div class="cardScore">
-                  <img src="assets/icons8-imdb-48.png" alt="" />
+                  <img src="{% static 'assets/icons8-imdb-48.png' %}" alt="" />
                   <div class="scoreNumb">
                     <span>10/</span>
                     <span class="score">6.3</span>
@@ -1090,28 +1090,28 @@
               <div class="mainCard">
                 <div class="cardSection">
                   <span class="cardIcon">
-                    <img src="assets/icons8-sheets-24.png" alt="" />
+                    <img src="{% static 'assets/icons8-sheets-24.png' %}" alt="" />
                   </span>
                   <span class="cardDetailTitle">ژانر:</span>
                   <span class="cardDetailName">هیجان انگیز,جنایی</span>
                 </div>
                 <div class="cardSection">
                   <span class="cardIcon">
-                    <img src="assets/icons8-europe-50.png" alt="" />
+                    <img src="{% static 'assets/icons8-europe-50.png' %}" alt="" />
                   </span>
                   <span class="cardDetailTitle">کشور:</span>
                   <span class="cardDetailName"> آمریکا </span>
                 </div>
                 <div class="cardSection">
                   <span class="cardIcon">
-                    <img src="assets/icons8-advertisement-page-50.png" alt="" />
+                    <img src="{% static 'assets/icons8-advertisement-page-50.png' %}" alt="" />
                   </span>
                   <span class="cardDetailTitle">کیفیت:</span>
                   <span class="cardDetailName">HD</span>
                 </div>
                 <div class="cardSection">
                   <span class="cardIcon">
-                    <img src="assets/icons8-user-50.png" alt="" />
+                    <img src="{% static 'assets/icons8-user-50.png' %}" alt="" />
                   </span>
                   <span class="cardDetailTitle">بازیگران:</span>
                   <span class="cardDetailName">
@@ -1120,7 +1120,7 @@
                 </div>
                 <div class="cardSection">
                   <span class="cardIcon">
-                    <img src="assets/icons8-documentary-50.png" alt="" />
+                    <img src="{% static 'assets/icons8-documentary-50.png' %}" alt="" />
                   </span>
                   <span class="cardDetailTitle">کارگردان:</span>
                   <span class="cardDetailName">Josef Kubota Wladyka</span>
@@ -1143,7 +1143,7 @@
           </div>
           <div class="cardContainer">
             <div class="cardImage">
-              <img src="assets/img/c11.webp" alt="" />
+              <img src="{% static 'assets/img/c11.webp' %}" alt="" />
             </div>
             <div class="cardDetails">
               <div class="cardHeader">
@@ -1151,7 +1151,7 @@
                   <span>دانلود فیلم گل خون</span>
                 </div>
                 <div class="cardScore">
-                  <img src="assets/icons8-imdb-48.png" alt="" />
+                  <img src="{% static 'assets/icons8-imdb-48.png' %}" alt="" />
                   <div class="scoreNumb">
                     <span>10/</span>
                     <span class="score">5.5</span>
@@ -1161,28 +1161,28 @@
               <div class="mainCard">
                 <div class="cardSection">
                   <span class="cardIcon">
-                    <img src="assets/icons8-sheets-24.png" alt="" />
+                    <img src="{% static 'assets/icons8-sheets-24.png' %}" alt="" />
                   </span>
                   <span class="cardDetailTitle">ژانر:</span>
                   <span class="cardDetailName">ترسناک,رازآلود</span>
                 </div>
                 <div class="cardSection">
                   <span class="cardIcon">
-                    <img src="assets/icons8-europe-50.png" alt="" />
+                    <img src="{% static 'assets/icons8-europe-50.png' %}" alt="" />
                   </span>
                   <span class="cardDetailTitle">کشور:</span>
                   <span class="cardDetailName"> مالزی </span>
                 </div>
                 <div class="cardSection">
                   <span class="cardIcon">
-                    <img src="assets/icons8-advertisement-page-50.png" alt="" />
+                    <img src="{% static 'assets/icons8-advertisement-page-50.png' %}" alt="" />
                   </span>
                   <span class="cardDetailTitle">کیفیت:</span>
                   <span class="cardDetailName">HD</span>
                 </div>
                 <div class="cardSection">
                   <span class="cardIcon">
-                    <img src="assets/icons8-user-50.png" alt="" />
+                    <img src="{% static 'assets/icons8-user-50.png' %}" alt="" />
                   </span>
                   <span class="cardDetailTitle">بازیگران:</span>
                   <span class="cardDetailName">
@@ -1191,7 +1191,7 @@
                 </div>
                 <div class="cardSection">
                   <span class="cardIcon">
-                    <img src="assets/icons8-documentary-50.png" alt="" />
+                    <img src="{% static 'assets/icons8-documentary-50.png' %}" alt="" />
                   </span>
                   <span class="cardDetailTitle">کارگردان:</span>
                   <span class="cardDetailName">Dain Said</span>
@@ -1217,7 +1217,7 @@
           </div>
           <div class="cardContainer">
             <div class="cardImage">
-              <img src="assets/img/c12.webp" alt="" />
+              <img src="{% static 'assets/img/c12.webp' %}" alt="" />
             </div>
             <div class="cardDetails">
               <div class="cardHeader">
