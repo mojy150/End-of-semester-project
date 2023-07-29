@@ -1,0 +1,202 @@
+{% load static %}
+<div class="filter">
+    <div class="filterItems">
+      <div class="fltItmTitle">
+        <span>فیلم یا سریال</span>
+        <img src="{%static "assets/openMenu.png" %}" alt="" />
+      </div>
+      <ul id="filmAndSerialList">
+        <li>
+          <input name="filmAndSerial" id="all" type="radio" />
+          <label for="all">همه</label>
+        </li>
+        <li>
+          <input name="filmAndSerial" id="film" type="radio" />
+          <label for="film">فیلم</label>
+        </li>
+        <li>
+          <input name="filmAndSerial" id="serial" type="radio" />
+          <label for="serial">سریال</label>
+        </li>
+      </ul>
+    </div>
+    <div class="filterItems">
+      <div class="fltItmTitle">
+        <span>ژانر</span>
+        <img src="{%static "assets/openMenu.png" %}" alt="" />
+      </div>
+      <ul id="genreList">
+        <li>
+          <input name="genre" id="action" type="radio" />
+          <label for="action">اکشن</label>
+        </li>
+        <li>
+          <input name="genre" id="horror" type="radio" />
+          <label for="horror">ترسناک</label>
+        </li>
+        <li>
+          <input name="genre" id="advanture" type="radio" />
+          <label for="advanture">ماجراجویی</label>
+        </li>
+        <li>
+          <input name="genre" id="comedy" type="radio" />
+          <label for="comedy">کمدی</label>
+        </li>
+        <li>
+          <input name="genre" id="drama" type="radio" />
+          <label for="drama">درام</label>
+        </li>
+        <li>
+          <input name="genre" id="animation" type="radio" />
+          <label for="animation">انیمیشن</label>
+        </li>
+      </ul>
+    </div>
+    <div class="filterItems">
+      <div class="fltItmTitle">
+        <span>از سال</span>
+        <img src="{%static "assets/openMenu.png" %}" alt="" />
+      </div>
+      <ul id="fromYearList">
+        <li>
+          <input type="radio" name="fromYear" id="from131" />
+          <label for="from131">1310</label>
+        </li>
+        <li>
+          <input type="radio" name="fromYear" id="from132" />
+          <label for="from132">1320</label>
+        </li>
+        <li>
+          <input type="radio" name="fromYear" id="from133" />
+          <label for="from133">1330</label>
+        </li>
+        <li>
+          <input type="radio" name="fromYear" id="from134" />
+          <label for="from134">1340</label>
+        </li>
+        <li>
+          <input type="radio" name="fromYear" id="from135" />
+          <label for="from135">1350</label>
+        </li>
+        <li>
+          <input type="radio" name="fromYear" id="from136" />
+          <label for="from136">1360</label>
+        </li>
+        <li>
+          <input type="radio" name="fromYear" id="from137" />
+          <label for="from137">1370</label>
+        </li>
+        <li>
+          <input type="radio" name="fromYear" id="from138" />
+          <label for="from138">1380</label>
+        </li>
+        <li>
+          <input type="radio" name="fromYear" id="from139" />
+          <label for="from139">1390</label>
+        </li>
+        <li>
+          <input type="radio" name="fromYear" id="from140" />
+          <label for="from140">1400</label>
+        </li>
+      </ul>
+    </div>
+    <div class="filterItems">
+      <div class="fltItmTitle">
+        <span>تا سال</span>
+        <img src="{%static "assets/openMenu.png" %}" alt="" />
+      </div>
+      <ul id="toYearList">
+        <li>
+          <input type="radio" name="toYear" id="to131" />
+          <label for="to131">1310</label>
+        </li>
+        <li>
+          <input type="radio" name="toYear" id="to132" />
+          <label for="to132">1320</label>
+        </li>
+        <li>
+          <input type="radio" name="toYear" id="to133" />
+          <label for="to133">1330</label>
+        </li>
+        <li>
+          <input type="radio" name="toYear" id="to134" />
+          <label for="to134">1340</label>
+        </li>
+        <li>
+          <input type="radio" name="toYear" id="to135" />
+          <label for="to135">1350</label>
+        </li>
+        <li>
+          <input type="radio" name="toYear" id="to136" />
+          <label for="to136">1360</label>
+        </li>
+        <li>
+          <input type="radio" name="toYear" id="to137" />
+          <label for="to137">1370</label>
+        </li>
+        <li>
+          <input type="radio" name="toYear" id="to138" />
+          <label for="to138">1380</label>
+        </li>
+        <li>
+          <input type="radio" name="toYear" id="to139" />
+          <label for="to139">1390</label>
+        </li>
+        <li>
+          <input type="radio" name="toYear" id="to140" />
+          <label for="to140">1400</label>
+        </li>
+      </ul>
+    </div>
+    <div class="filterItems">
+      <div class="fltItmTitle">
+        <span>امتیاز</span>
+        <img src="{%static "assets/openMenu.png"%}" alt="" />
+      </div>
+      <ul id="scoreList">
+        <li>
+          <input type="radio" name="score" id="two" />
+          <label for="two">0-2</label>
+        </li>
+        <li>
+          <input type="radio" name="score" id="five" />
+          <label for="five">2-5</label>
+        </li>
+        <li>
+          <input type="radio" name="score" id="eight" />
+          <label for="eight">5-8</label>
+        </li>
+        <li>
+          <input type="radio" name="score" id="ten" />
+          <label for="ten">8-10</label>
+        </li>
+      </ul>
+    </div>
+    <div class="filterItems">
+      <div class="fltItmTitle">
+        <span>به ترتیب</span>
+        <img src="{% static "assets/openMenu.png" %}" alt="" />
+      </div>
+      <ul id="sortList">
+        <li>
+          <input type="radio" name="sort" id="new" />
+          <label for="new">جدیدترین</label>
+        </li>
+        <li>
+          <input type="radio" name="sort" id="old" />
+          <label for="old">قدیمی ترین </label>
+        </li>
+        <li>
+          <input type="radio" name="sort" id="fave" />
+          <label for="fave">محبوب ترین</label>
+        </li>
+        <li>
+          <input type="radio" name="sort" id="score" />
+          <label for="score">امتیاز</label>
+        </li>
+      </ul>
+    </div>
+    <div class="filterSearch">
+      <button>جستجو</button>
+    </div>
+  </div>
