@@ -1,0 +1,118 @@
+{% load static %}
+<div class="content">
+  {% for movie in movies %}
+    <div class="cardContainer">
+      <div class="cardImage">
+        <img src="{{ movie.poster }}" alt="" />
+      </div>
+      <div class="cardDetails">
+        <div class="cardHeader">
+          <div class="cardTitle">
+            <span>{{movie.title}}</span>
+          </div>
+          <div class="cardScore">
+            <img src="{% static "assets/icons8-imdb-48.png" %}" alt="" />
+            <div class="scoreNumb">
+              <span>10/</span>
+              <span class="score">{{movie.IMDB_point}}</span>
+            </div>
+          </div>
+        </div>
+        <div class="mainCard">
+          <div class="cardSection">
+            <span class="cardIcon">
+              <img src="{% static 'assets/icons8-sheets-24.png' %}" alt="" />
+            </span>
+            <span class="cardDetailTitle">ژانر:</span>
+            <span class="cardDetailName">{% for genre in movie.genre.all %}{{ genre }}، {% endfor %}</span>
+          </div>
+          <div class="cardSection">
+            <span class="cardIcon">
+              <img src="{% static 'assets/icons8-europe-50.png' %}" alt="" />
+            </span>
+            <span class="cardDetailTitle">کشور:</span>
+            <span class="cardDetailName">
+              {% for country in movie.country.all %}{{ country }}، {% endfor %}
+            </span>
+          </div>
+          <div class="cardSection">
+            <span class="cardIcon">
+              <img src="{% static 'assets/icons8-advertisement-page-50.png' %}" alt="" />
+            </span>
+            <span class="cardDetailTitle">کیفیت:</span>
+            <span class="cardDetailName">{% for resolution in movie.resolution.all %}{{ resolution }}، {% endfor %}</span>
+          </div>
+          <div class="cardSection">
+            <span class="cardIcon">
+              <img src="{% static 'assets/icons8-user-50.png' %}" alt="" />
+            </span>
+            <span class="cardDetailTitle">بازیگران:</span>
+            <span class="cardDetailName"
+              >{% for actor in movie.actor.all %}{{ actor }}، {% endfor %}</span
+            >
+          </div>
+          <div class="cardSection">
+            <span class="cardIcon">
+              <img src="{% static 'assets/icons8-documentary-50.png' %}" alt="" />
+            </span>
+            <span class="cardDetailTitle">کارگردان:</span>
+            <span class="cardDetailName">{% for director in movie.director.all %}{{ director }}، {% endfor %}</span>
+          </div>
+        </div>
+        <div class="cardDescrib">
+          <span>
+            {{movie.description}}
+          </span>
+        </div>
+        <div class="cardFooter">
+          <div class="cardTagContainer">
+            <span class="cardTag">زیرنویس چسبیده</span>
+            <span class="cardTag">پخش آنلاین</span>
+            <span class="cardTag">زبان اصلی</span>
+          </div>
+          <div class="cardDownload">
+            <span>دانلود سریال</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  {% endfor %}
+    <hr />
+    <div class="newConatiner">
+      <h3>اخبار دنیای سینما</h3>
+      <div class="news">
+        <div class="newsPic">
+          <img src="{% static 'assets/img/news.png' %}" alt="" />
+          <div class="newsPicDetails">
+            <span class="newsTitle"
+              >میاگاث: maXXXine یک فیلم ابرقهرمانی است</span
+            >
+            <span class="newsAgo">3 ماه پیش</span>
+          </div>
+        </div>
+        <div class="newsText">
+          <div class="newsTextitem">
+            <span class="newsTitle"
+              >دیوید لینچ در جشنواره کن ۲۰۲۳ حضور پیدا می‌کند</span
+            >
+            <span class="newsAgo">3 ماه پیش</span>
+          </div>
+          <div class="newsTextitem">
+            <span class="newsTitle"
+              >قطع همکاری با جاناتان میجرز پس از متهم شدن به خشونت
+              خانگی</span
+            >
+            <span class="newsAgo">3 ماه پیش</span>
+          </div>
+          <div class="newsTextitem">
+            <span class="newsTitle"
+              >سیلوستر استالونه در فیلم اکشن و کمدی Never Too Old to
+              Die</span
+            >
+            <span class="newsAgo">3 ماه پیش</span>
+          </div>
+        </div>
+      </div>
+      <a href="#" class="moreNews">بیشتر</a>
+    </div>
+  </div>

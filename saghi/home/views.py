@@ -1,4 +1,6 @@
 from django.shortcuts import render
+from home import models
 
 def home(request):
-    return render(request,'index.html')
+    movie = models.Movie.objects.all()
+    return render(request,'index.html',{'movies':movie})
