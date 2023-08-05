@@ -25,7 +25,7 @@ class Movie(models.Model):
     director = models.ManyToManyField(Director,related_name="director_rel_home")
     description = models.TextField()
     IMDB_point = models.FloatField()
-    # poster = 
+    poster = models.ImageField(null=True, blank=True)
     date = models.DateTimeField(auto_now_add=True)
     duration = models.IntegerField(default=0)
     def __str__(self):
