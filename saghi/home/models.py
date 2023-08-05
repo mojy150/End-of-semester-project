@@ -7,12 +7,12 @@ class Genre(models.Model):
         return f"{self.genre}"
 
 class Actor(models.Model):
-    actor = models.CharField(max_length=100)
+    actor = models.CharField(max_length=100,unique=True)
     def __str__(self):
         return f"{self.actor}"
 
 class Director(models.Model):
-    director = models.CharField(max_length=100)
+    director = models.CharField(max_length=100,unique=True)
     def __str__(self):
         return f"{self.director}"
 
