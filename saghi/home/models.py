@@ -36,6 +36,7 @@ class Movie(models.Model):
     description = models.TextField(null=True, blank=True)
     IMDB_point = models.FloatField()
     poster = models.ImageField(null=True, blank=True)
+    publication = models.IntegerField(default=0)
     date = models.DateTimeField(auto_now_add=True)
     duration = models.IntegerField(default=0)
     def __str__(self):
