@@ -42,5 +42,17 @@ class Movie(models.Model):
     def __str__(self):
         return f"{self.title}"
 
-# class download(models.Model):
+class TypeDownload(models.Model):
+    type = models.CharField(max_length=300)
+    def __str__(self):
+        return f"{self.type}"
+
+class download(models.Model):
+    title = models.ManyToManyField(Movie,related_name="title_rel_home",null=True, blank=True)
+    type = models.ManyToManyField(TypeDownload,related_name="type_rel_home",null=True, blank=True)
+    quality = models.IntegerField(default=0)                                                         # کیفیت
+    Volume = models.IntegerField(default=0)                                                          # حجم
+    
+    def __str__(self):
+        return f"{self.title}|{self.type}|{self.quality}"
     
