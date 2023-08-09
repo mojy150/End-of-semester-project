@@ -41,3 +41,6 @@ class Movie(models.Model):
     duration = models.IntegerField(default=0)
     def __str__(self):
         return f"{self.title}"
+
+# class download(models.Model):
+    

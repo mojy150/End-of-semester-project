@@ -11,21 +11,22 @@
   <body>
     {% include 'header.html' %}
     <div class="container">
+      {% comment %} {% for movie in movies %} {% endcomment %}
       <div class="movieContainer">
         <div class="backGroundFilter">
-          <img src="{% static 'assets/img/cover.webp' %}" alt="" />
+          <img src="/media/{{movie.poster}}" alt="" />
         </div>
         <div class="moviesDetails">
           <div class="movieCover">
-            <img src="{% static 'assets/img/cover.webp' %}" alt="" />
+            <img src="/media/{{movie.poster}}" alt="" />
           </div>
           <div class="movieDetails">
             <div class="titleContainer">
-              <h2 class="title">فیلم تار عنکبوت Cobweb 2023</h2>
+              <h2 class="title">{{movie.title}}</h2>
             </div>
             <div class="details">
               <span class="detailTitle">امتیاز: </span>
-              <span class="detail"> 10 / 8 </span>
+              <span class="detail"> 10 / {{movie.IMDB_point}} </span>
             </div>
             <div class="details">
               <span class="detailTitle">سال انتشار: </span>
@@ -33,23 +34,19 @@
             </div>
             <div class="details">
               <span class="detailTitle">ژانر: </span>
-              <span class="detail"> ترسناک / هیجان انگیز </span>
+              <span class="detail">{% for genre in movie.genre.all %}{{ genre }}، {% endfor %}</span>
             </div>
             <div class="details">
               <span class="detailTitle">کارگردان: </span>
-              <span class="detail">Samuel Bodin</span>
+              <span class="detail">{% for director in movie.director.all %}{{ director }}، {% endfor %}</span>
             </div>
             <div class="details">
               <span class="detailTitle">مدت زمان: </span>
-              <span class="detail">88 دقیقه</span>
+              <span class="detail"> {{movie.duration}} دقیقه</span>
             </div>
             <div class="details">
               <span class="detailTitle">درباره فیلم: </span>
-              <span class="detail">
-                محصول کشور آمریکا و در ژانر ترسناک ، هیجان انگیز می‌باشد و به
-                کارگردانی Samuel Bodin در سال 2023 ساخته شده است. در فیلم تار
-                عنکبوت بازیگرانی چون Antony Starr، Cleopatra Coleman، Lizzy
-                Caplan، و... به ایفای نقش پرداخته اند.
+              <span class="detail">{{movie.description}}
               </span>
             </div>
             <div class="details">
@@ -243,6 +240,7 @@
           </form>
         </div>
       </div>
+      {% comment %} {% endfor %} {% endcomment %}
     </div>
     <div class="footer">
       <div class="copyRight">تمامی اطلاعات متعلق به من میباشد</div>
