@@ -8,7 +8,7 @@
       <div class="cardDetails">
         <div class="cardHeader">
           <div class="cardTitle">
-            <span>{{movie.title}}</span>
+            <span>دانلود {{movie.title}}</span>
           </div>
           <div class="cardScore">
             <img src="{% static "assets/icons8-imdb-48.png" %}" alt="" />
@@ -71,7 +71,7 @@
             <span class="cardTag">زبان اصلی</span>
           </div>
           <div class="cardDownload">
-            <span>دانلود سریال</span>
+            <a href="{% url 'movie' movie.id %}" style="color:white; text-decoration: none;">دانلود سریال</a>
           </div>
         </div>
       </div>
