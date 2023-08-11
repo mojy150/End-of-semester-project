@@ -1,9 +1,23 @@
 from django.shortcuts import render,redirect
-from .forms import UserRegistrationForm
+from .forms import *
 from django.contrib.auth.models import User
+from django.contrib.auth import authenticate, login
+from django.contrib import messages
 
 def login(request):
-    return render(request,'login.html')
+    if request.method == 'POST':
+        form = UserLoginForm(request.POST)
+        if form.is_valid():
+            cd = form.cleaned_data
+            user = authenticate(request,username=cd["username"],password=cd["password"])
+            if user is not None:
+                login(request, user)
+                return redirect('profile')
+            else:
+                messages.error(request,'username or password is wrong')
+    else:
+        form = UserLoginForm()
+    return render(request,'login.html',{"form":form})
 
 def signup(request):
     if request.method == 'POST':

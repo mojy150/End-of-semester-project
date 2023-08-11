@@ -9,22 +9,10 @@
   </head>
   <body>
     <div class="loginContainer">
-      <h3>ثبت نام</h3>
-      <form class="form" action="panel.htm">
-        <label for="username">نام کاربری:</label>
-        <input
-          type="text"
-          id="username"
-          required
-          placeholder="نام کاربری خود را وارد کنید..."
-        />
-        <label for="password">کلمه عبور:</label>
-        <input
-          type="password"
-          id="password"
-          required
-          placeholder="کلمه عبور خود را وارد کنید..."
-        />
+      <h3>ورود</h3>
+      <form class="form" action="" method="post">
+        {% csrf_token %}
+        {{ form }}
         <input type="submit" value="ورود" onclick="login()" class="submit" />
       </form>
     </div>
