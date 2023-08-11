@@ -10,7 +10,8 @@ def signup(request):
         form = UserRegistrationForm(request.POST)
         if form.is_valid():
             cd = form.cleaned_data
-            User.objects.create_user(cd["username"],cd["email"],cd["password"])        
+            User.objects.create_user(cd["username"],cd["email"],cd["password"])
+            return redirect('profile')
     else:
         form = UserRegistrationForm()
     return render(request,'signup.html',{"form":form})

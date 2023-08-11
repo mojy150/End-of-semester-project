@@ -10,7 +10,7 @@
   <body>
     <div class="loginContainer">
       <h3>ثبت نام</h3>
-      <form class="form" action="{% url 'profile' %}">
+      <form class="form" action="" method="post">
         {% csrf_token %}
         {{ form }}
         <input type="submit" value="ثبت نام" onclick="login()" class="submit" />
