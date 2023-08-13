@@ -21,15 +21,15 @@
         <div class="profContainer">
           <div class="profile">
             <span class="profTitle">نام:</span>
-            <span class="profileDetail">محمد</span>
+            <span class="profileDetail">{{request.user.first_name}}</span>
           </div>
           <div class="profile">
             <span class="profTitle">نام خانوادگی:</span>
-            <span class="profileDetail">محمدی</span>
+            <span class="profileDetail">{{request.user.last_name}}</span>
           </div>
           <div class="profile">
             <span class="profTitle">نام کاربری:</span>
-            <span class="profileDetail">mohammad</span>
+            <span class="profileDetail">{{request.user.username}}</span>
           </div>
           <div class="profile">
             <span class="profTitle">شماره تلفن:</span>
@@ -37,7 +37,7 @@
           </div>
           <div class="profile">
             <span class="profTitle">ایمیل:</span>
-            <span class="profileDetail">mohammad@email.com</span>
+            <span class="profileDetail">{{request.user.email}}</span>
           </div>
         </div>
       </div>
@@ -48,15 +48,15 @@
         <div class="profContainer">
           <div class="profile">
             <span class="profTitle">نام:</span>
-            <input class="inputDetails" type="text" value="محد" />
+            <input class="inputDetails" type="text" value="{{request.user.first_name}}" />
           </div>
           <div class="profile">
             <span class="profTitle">نام خانوادگی:</span>
-            <input class="inputDetails" type="text" value="محمدی" />
+            <input class="inputDetails" type="text" value="{{request.user.last_name}}" />
           </div>
           <div class="profile">
             <span class="profTitle">نام کاربری:</span>
-            <input class="inputDetails" type="text" value="mohammadmd" />
+            <input class="inputDetails" type="text" value="{{request.user.username}}" />
           </div>
           <div class="profile">
             <span class="profTitle">شماره تلفن:</span>
@@ -71,7 +71,7 @@
             <input
               class="inputDetails number"
               type="email"
-              value="mohammad@email.com"
+              value="{{request.user.email}}"
             />
           </div>
           <div class="profile">
