@@ -8,6 +8,7 @@
     <title>panel</title>
   </head>
   <body>
+    {% if request.user.is_authenticated %}
     <div class="home">
       <a class="homeLink" href="{% url 'home' %}">بازگشت به سایت</a>
       <a class="homeLink" href="{% url 'logout' %}">خروج از برنامه</a>
@@ -161,5 +162,12 @@
         </div>
       </div>
     </div>
+    {% else %}
+    <div class="home">
+      <a class="homeLink" href="{% url 'login' %}">ورود</a>
+      /
+      <a class="homeLink" href="{% url 'signup' %}">ثبت نام</a>
+    </div>
+    {% endif %}
   </body>
 </html>
