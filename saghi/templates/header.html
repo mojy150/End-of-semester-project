@@ -77,7 +77,7 @@
         </div>
       </div>
       <div class="rightNav">
-        <form class="search" method="post">
+        <form class="search" method="post" action="{% url 'search' %}">
           {% csrf_token %}
           <input type="search" placeholder="جست و جو..."  name="search"/>
           <button type="submit">
