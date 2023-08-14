@@ -8,3 +8,12 @@ def home(request):
 def movie_page(request,movie_id):
     movie = models.Movie.objects.get(id=movie_id)
     return render(request,'movieDetails.html',{'movie':movie})
+
+def search(request):
+    if request.method == 'POST':
+        search = request.POST['search']
+        movie = models.Movie.objects.filter(title__contains=search)
+        
+        return render(request,'search.html',{'search':search,'movies':movie})
+    else:
+        return render(request,'search.html')

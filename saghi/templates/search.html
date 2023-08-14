@@ -1,0 +1,104 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="{%static "style/main.css" %}"/>
+    <link rel="stylesheet" href="{%static "style/slide.css" %}" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>search</title>
+</head>
+<body>
+    <div class="main">
+    {% include 'header.html' %}
+        {% if search %}
+            <center>
+            <h1>you searched for {{search}}</h1><br>
+            </center>
+            {% for movie in movies %}
+            <div class="content">
+                <div class="cardContainer">
+                    <div class="cardImage">
+                      <img src="/media/{{ movie.poster }}" alt="" />
+                    </div>
+                    <div class="cardDetails">
+                      <div class="cardHeader">
+                        <div class="cardTitle">
+                          <span>دانلود {{movie.title}}</span>
+                        </div>
+                        <div class="cardScore">
+                          <img src="{% static "assets/icons8-imdb-48.png" %}" alt="" />
+                          <div class="scoreNumb">
+                            <span>10/</span>
+                            <span class="score">{{movie.IMDB_point}}</span>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="mainCard">
+                        <div class="cardSection">
+                          <span class="cardIcon">
+                            <img src="{% static 'assets/icons8-sheets-24.png' %}" alt="" />
+                          </span>
+                          <span class="cardDetailTitle">ژانر:</span>
+                          <span class="cardDetailName">{% for genre in movie.genre.all %}{{ genre }}، {% endfor %}</span>
+                        </div>
+                        <div class="cardSection">
+                          <span class="cardIcon">
+                            <img src="{% static 'assets/icons8-europe-50.png' %}" alt="" />
+                          </span>
+                          <span class="cardDetailTitle">کشور:</span>
+                          <span class="cardDetailName">
+                            {% for country in movie.country.all %}{{ country }}، {% endfor %}
+                          </span>
+                        </div>
+                        <div class="cardSection">
+                          <span class="cardIcon">
+                            <img src="{% static 'assets/icons8-advertisement-page-50.png' %}" alt="" />
+                          </span>
+                          <span class="cardDetailTitle">کیفیت:</span>
+                          <span class="cardDetailName">{% for resolution in movie.resolution.all %}{{ resolution }}، {% endfor %}</span>
+                        </div>
+                        <div class="cardSection">
+                          <span class="cardIcon">
+                            <img src="{% static 'assets/icons8-user-50.png' %}" alt="" />
+                          </span>
+                          <span class="cardDetailTitle">بازیگران:</span>
+                          <span class="cardDetailName"
+                            >{% for actor in movie.actor.all %}{{ actor }}، {% endfor %}</span
+                          >
+                        </div>
+                        <div class="cardSection">
+                          <span class="cardIcon">
+                            <img src="{% static 'assets/icons8-documentary-50.png' %}" alt="" />
+                          </span>
+                          <span class="cardDetailTitle">کارگردان:</span>
+                          <span class="cardDetailName">{% for director in movie.director.all %}{{ director }}، {% endfor %}</span>
+                        </div>
+                      </div>
+                      <div class="cardDescrib">
+                        <span>
+                          {{movie.description}}
+                        </span>
+                      </div>
+                      <div class="cardFooter">
+                        <div class="cardTagContainer">
+                          <span class="cardTag">زیرنویس چسبیده</span>
+                          <span class="cardTag">پخش آنلاین</span>
+                          <span class="cardTag">زبان اصلی</span>
+                        </div>
+                        <div class="cardDownload">
+                          <a href="{% url 'movie' movie.id %}" style="color:white; text-decoration: none;">دانلود سریال</a>
+                        </div>
+                      </div>
+                    </div>
+                </div>
+            </div>
+            {% endfor %}
+        {% else %}
+        <center>
+            <h1>you forget to search for a movie</h1>
+        </center>
+        {% endif %}
+    </div>
+</body>
+</html>
