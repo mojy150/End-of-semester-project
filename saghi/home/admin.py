@@ -6,7 +6,7 @@ class MovieAdmin(admin.ModelAdmin):
     
 
 admin.site.register(Movie,MovieAdmin)
-admin.site.register(Genre)
+admin.site.register(Tag)
 admin.site.register(Actor)
 admin.site.register(Director)
 admin.site.register(Country)
