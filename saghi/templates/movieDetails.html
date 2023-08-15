@@ -64,21 +64,13 @@
         <div class="downloadSection">
           <h3>دانلود با زیرنویس چسبیده</h3>
           <div class="qualityContainer">
+            {% for download_item in downloads %}
             <div class="qualitySection">
-              <span class="quality">کیفیت 1080p : </span>
-              <span class="Size quality"> 1.5GB </span>
-              <a href="#" class="btnDownload">دانلود</a>
+              <span class="quality">کیفیت {{ download_item.quality }} : </span>
+              <span class="Size quality"> {{ download_item.Volume }} </span>
+              <a href="{{ download_item.download_url }}" class="btnDownload">دانلود</a>
             </div>
-            <div class="qualitySection">
-              <span class="quality"> کیفیت 720p : </span>
-              <span class="Size quality"> 812.2MB </span>
-              <a href="#" class="btnDownload">دانلود</a>
-            </div>
-            <div class="qualitySection">
-              <span class="quality">کیفیت 480p :</span>
-              <span class="Size quality"> 445.3MB </span>
-              <a href="#" class="btnDownload">دانلود</a>
-            </div>
+            {% endfor %}
           </div>
         </div>
         <div class="downloadSection">

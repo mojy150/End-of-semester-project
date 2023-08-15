@@ -7,7 +7,8 @@ def home(request):
 
 def movie_page(request,movie_id):
     movie = models.Movie.objects.get(id=movie_id)
-    return render(request,'movieDetails.html',{'movie':movie})
+    downloads = models.download.objects.filter(title=movie)  # فیلتر کردن بر اساس فیلم مورد نظر
+    return render(request, 'movieDetails.html', {'movie': movie, 'downloads': downloads})
 
 def search(request):
     if request.method == 'POST':
