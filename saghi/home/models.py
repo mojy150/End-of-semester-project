@@ -1,10 +1,16 @@
 from django.db import models
 from datetime import datetime
 
-class Genre(models.Model):
-    genre = models.CharField(max_length=50,unique=True)
+class Tag(models.Model):
+    tag_name = models.CharField(max_length=50,unique=True)
+    tag_url = models.CharField(max_length=500,default="/search?q=")
     def __str__(self):
-        return f"{self.genre}"
+        return f"{self.tag_name}"
+    
+    def save(self,*args,**kwargs):
+        if (self.tag_name not in  self.tag_url) and self.tag_name != "/search?q=":
+            self.tag_url += self.tag_name
+        super(Tag,self).save(*args,**kwargs)
 
 class Actor(models.Model):
     actor = models.CharField(max_length=100,unique=True)
@@ -28,7 +34,7 @@ class Resolution(models.Model):
 
 class Movie(models.Model):
     title = models.CharField(max_length=300)
-    genre = models.ManyToManyField(Genre,related_name="genre_rel_home",null=True, blank=True)
+    tag = models.ManyToManyField(Tag,related_name="tag_rel_home",null=True, blank=True)
     country = models.ManyToManyField(Country,related_name="country_rel_home",null=True, blank=True)
     resolution = models.ManyToManyField(Resolution,related_name="resolution_rel_home",null=True, blank=True)
     actor = models.ManyToManyField(Actor, related_name="actor_rel_home",null=True, blank=True)
@@ -52,7 +58,7 @@ class download(models.Model):
     type = models.ManyToManyField(TypeDownload,related_name="type_rel_home",null=True, blank=True)
     quality = models.IntegerField(default=0)                                                         # کیفیت
     Volume = models.IntegerField(default=0)                                                          # حجم
-    
+    download_url = models.URLField(default="https://www.example.com/download",help_text="<h2>Enter a URL to download file</h2>")
     def __str__(self):
         return f"{self.title}|{self.type}|{self.quality}"
     
