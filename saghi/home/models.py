@@ -57,7 +57,7 @@ class download(models.Model):
     title = models.ManyToManyField(Movie,related_name="title_rel_home",null=True, blank=True)
     type = models.ManyToManyField(TypeDownload,related_name="type_rel_home",null=True, blank=True)
     quality = models.IntegerField(default=0)                                                         # کیفیت
-    Volume = models.IntegerField(default=0)                                                          # حجم
+    Volume = models.CharField(max_length=50)                                                         # حجم
     download_url = models.URLField(default="https://www.example.com/download",help_text="<h2>Enter a URL to download file</h2>")
     def __str__(self):
         return f"{self.title}|{self.type}|{self.quality}"
