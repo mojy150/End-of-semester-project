@@ -60,5 +60,7 @@ class download(models.Model):
     Volume = models.CharField(max_length=50)                                                         # حجم
     download_url = models.URLField(default="https://www.example.com/download",help_text="<h2>Enter a URL to download file</h2>")
     def __str__(self):
-        return f"{self.title}|{self.type}|{self.quality}"
+        titles = '|'.join([str(title) for title in self.title.all()])
+        types = '|'.join([str(type) for type in self.type.all()])
+        return f"{titles}|{types}|{self.quality}"
     
