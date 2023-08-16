@@ -62,17 +62,27 @@
       </div>
       <div class="download">
         <div class="downloadSection">
-          <h3>دانلود با زیرنویس چسبیده</h3>
           <div class="qualityContainer">
-            {% for download_item in downloads %}
-            <div class="qualitySection">
-              <span class="quality">کیفیت {{ download_item.quality }} : </span>
-              <span class="Size quality"> {{ download_item.Volume }} </span>
-              <a href="{{ download_item.download_url }}" class="btnDownload">دانلود</a>
-            </div>
-            {% endfor %}
+              {% if downloads %}
+                  <h3>دانلود 
+                      {% for type_item in downloads.0.type.all %}
+                          {{ type_item.type }}
+                      {% empty %}
+                          نوعی مشخص نشده است
+                      {% endfor %}
+                  </h3>
+                  {% for download_item in downloads %}
+                      <div class="qualitySection">
+                          <span class="quality">کیفیت {{ download_item.quality }} : </span>
+                          <span class="Size quality">{{ download_item.Volume }}</span>
+                          <a href="{{ download_item.download_url }}" class="btnDownload">دانلود</a>
+                      </div>
+                  {% endfor %}
+              {% else %}
+                  <p>هیچ دانلودی برای این فیلم موجود نیست.</p>
+              {% endif %}
           </div>
-        </div>
+        </div>      
         <div class="downloadSection">
           <h3>دانلود زبان اصلی</h3>
           <div class="qualityContainer">
