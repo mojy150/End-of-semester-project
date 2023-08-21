@@ -14,7 +14,7 @@ def user_login(request):
                 login(request, user)
                 return redirect('profile')
             else:
-                messages.error(request,'username or password is wrong')
+                messages.error(request,'username or password is wrong','warning')
     else:
         form = UserLoginForm()
     return render(request,'login.html',{"form":form})
