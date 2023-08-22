@@ -27,16 +27,11 @@ class Country(models.Model):
     def __str__(self):
         return f"{self.country}"
 
-class Resolution(models.Model):
-    resolution = models.CharField(max_length=50,unique=True)
-    def __str__(self):
-        return f"{self.resolution}"
 
 class Movie(models.Model):
     title = models.CharField(max_length=300)
     tag = models.ManyToManyField(Tag,related_name="tag_rel_home",null=True, blank=True)
     country = models.ManyToManyField(Country,related_name="country_rel_home",null=True, blank=True)
-    resolution = models.ManyToManyField(Resolution,related_name="resolution_rel_home",null=True, blank=True)
     actor = models.ManyToManyField(Actor, related_name="actor_rel_home",null=True, blank=True)
     director = models.ManyToManyField(Director,related_name="director_rel_home",null=True, blank=True)
     description = models.TextField(null=True, blank=True)
