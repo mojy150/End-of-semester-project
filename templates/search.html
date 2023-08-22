@@ -40,7 +40,7 @@
                             <img src="{% static 'assets/icons8-sheets-24.png' %}" alt="" />
                           </span>
                           <span class="cardDetailTitle">ژانر:</span>
-                          <span class="cardDetailName">{% for genre in movie.genre.all %}{{ genre }}، {% endfor %}</span>
+                          <span class="cardDetailName">{% for tag in movie.tag.all %}{{ tag }}، {% endfor %}</span>
                         </div>
                         <div class="cardSection">
                           <span class="cardIcon">
