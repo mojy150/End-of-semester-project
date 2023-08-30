@@ -14,7 +14,6 @@ def search(request):
     if request.method == 'POST':
         search = request.POST['search']
         movie = models.Movie.objects.filter(title__contains=search)
-        
         return render(request,'search.html',{'search':search,'movies':movie})
     else:
         return render(request,'search.html')
